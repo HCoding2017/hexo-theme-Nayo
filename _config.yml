@@ -1,0 +1,75 @@
+#header nav
+menu:
+  home: /
+  archives: archives
+  categories: categories  
+  tags: tags
+  about: about
+  
+# left or right 
+# i like right...
+sidebar: right
+
+# sidebar widgets
+widgets:
+- profile
+- recent
+- category
+- tagcloud
+- link
+
+# site
+title: Synch
+
+#you info
+profile: 
+# put avatar in theme/source/img
+  logo: Nayo
+  avatar: /img/header.jpg
+  author: SYNCH
+  city: GuangZhou
+  country: China
+  descrption:  I just wanna be part of your symphony
+
+# put icon in theme/source/img
+favicon: /img/favicon.png
+
+#recent_posts number
+recent_posts:
+  count: 8
+
+#social link
+social:  
+  github: //github.com/
+  zhihu:
+  weibo:
+  segmentfault: 
+  facebook:
+  twitter:
+  instagram:
+  linkedin:
+  others:
+
+#your friend link
+link:
+  linka: //www.baidu.com
+  linkb: //www.google.com
+  linkc: //synch.site
+# linkd
+# toc of post  [ true or false]  
+toc:
+    true
+
+# is fullscreen [ 100%width show the page or less]
+fullscreen:
+    false
+
+# only normal | todo
+# code style
+highlight_theme: 
+    normal
+
+# website analytics [your analytics id]
+baidu_analytics:
+  636802045446222199ae541e32c8133e
+google_analytics: 

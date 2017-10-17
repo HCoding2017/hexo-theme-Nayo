@@ -1,0 +1,30 @@
+<section class="block fadein">
+  <h3><%= __('Page.Archives') %></h3>  
+	    
+   
+    <% var last%> 
+    <% page.posts.each(function (post) { %>
+      <% var year = post.date.year();%>
+
+        <%if(last != year ){%>        
+      	 <% if(last != null ){%>
+      			<h3 class="archive-year"><%= year %></h3>
+      		<%} else if(last == null) {%>  
+            <h3 class="archive-year"><%= year %></h3>
+          <%}%>       
+      	<% last = year %>	                
+		    <%}%>
+
+      <div class="archive-item">   	
+        <span class="left archive-date">
+         <%= date(post.date, "MM-DD") %>
+        </span>   
+
+        <% var title = truncate(post.title, {length:94}) %>
+        <a class="left archive-title" href="<%- url_for(post.path) %>"><%= title || __('Untitled')%></a>
+      </div>
+
+    <% }) %>
+
+</section>
+<%- partial('_partial/paginator') %>

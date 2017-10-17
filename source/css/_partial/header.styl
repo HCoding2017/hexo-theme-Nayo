@@ -1,0 +1,47 @@
+ .header
+  clear both 
+  width 100%
+  box-shadow 10px 0 20px 0 $box-shadow-clr
+  border-radius 10px 
+  
+.header-nav
+  width 100%
+  height auto
+  z-index 888  
+  
+.info
+  width 60%
+  height 100%
+  margin  0 auto  
+  padding 0 auto   
+  display -webkit-flex
+  display flex
+  align-items center
+  justify-content space-between 
+    
+#logo   
+    padding .5em 
+    border .1em solid $blue
+    border-radius 999em
+    &:hover
+      background $white
+      border .1em solid $hover-clr 
+
+       
+.menu-link  
+    margin-left .8em
+    margin-right .8em  
+    padding-bottom .9em
+    position relative
+    @media mq-normal  
+      &::before , &::after
+       position absolute 
+      &:hover
+       color $hover-clr    
+       font-size 1.1em    
+      &:hover::before 
+        content "\5b"
+        left -10px
+      &:hover::after
+        content "\5d"
+        right -10px

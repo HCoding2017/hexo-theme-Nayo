@@ -1,0 +1,18 @@
+
+<% if (site.categories.length){ %>
+<div class="widget">	
+    <a href="<%- url_for(theme.menu.categories) %>"><h3 class="widget-title"><%= __('Sidebar.Categories') %></h3></a>
+ 	
+
+      <% site.categories.sort('date',-1).each (function (category){%>
+      	
+      	<div class="categories-item">
+
+      	<a class="left" href="<%- url_for(category.path) %>"><%- category.name  %> 	</a>
+      	<span class="right categories-count"><%- category.length %></span>	
+
+      	</div>	
+      <%})%>
+</div>
+<% } %>
+

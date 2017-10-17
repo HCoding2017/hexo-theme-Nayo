@@ -1,0 +1,43 @@
+#toc
+	@extend $small-block
+#toc{
+	color : gray ;
+	overflow:  auto;
+}
+#hide-toc{
+	text-align : center;
+	border-bottom 1px solid $border-clr
+	cursor :pointer;
+}
+.toc-container{	
+	margin: auto 0;
+	height: 100%;  	
+ 	width : auto; 
+}
+#contents{
+	overflow: visible;
+	cursor :pointer;
+}
+.toc-item {
+	display:block;
+	font-size: 1.1em;	
+	padding-left .4em
+}
+.toc-item:hover{
+	cursor: pointer;
+	color : $hover-clr;
+	margin-left :.3em;
+}
+
+
+.toc-subitem {
+	display:block;
+	font-size: 1em;	
+	color :$gray;
+	margin-left: 0.6em;
+}
+.toc-subitem:hover{
+	cursor: pointer;
+	color : $hover-clr;
+	margin-left :0.8em;
+}

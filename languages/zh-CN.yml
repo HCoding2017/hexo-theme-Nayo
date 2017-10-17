@@ -1,0 +1,25 @@
+Menu:
+  home: 首页
+  categories: 分类
+  tags: 标签
+  archives: 归档
+  about: 关于
+Page:
+  Archives: 归档
+  Categories: 分类
+  Tags: 标签
+  About: 关于
+Sidebar:
+  Posts: 文章
+  Categories: 分类
+  Recents: 最近文章
+  TagCloud: 标签
+
+Paginator: 
+  Prev: 上一页
+  Next: 下一页
+
+Read_more: More 
+Untitled: 无标题
+
+

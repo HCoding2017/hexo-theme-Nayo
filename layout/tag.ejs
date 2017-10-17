@@ -1,0 +1,32 @@
+<section class="block fadein">
+
+  <% var title %>
+
+  <% if( is_tag()){ %>
+
+  	<% title ="# "+ page.tag %>
+  	<h1 class="title"><%= title %></h1>		
+  	
+	<% page.posts.each(function (post) { %>    	
+    <%- partial('_partial/article',{ post:post}) %>     
+	<% })%>
+
+  	%>
+
+  <%} else {%>	  
+
+  <% title = __('Page.Tags')%>
+  <h1 class="title"><%= title %></h1>	
+
+  <div class="tag">
+
+  <%- tagcloud(site.tags,{
+  	min_font:16,
+  	max_font:16,    
+  })%>
+
+  </div>
+
+  <%}%>
+
+</section>

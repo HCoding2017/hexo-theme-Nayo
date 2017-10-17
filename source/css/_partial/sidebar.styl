@@ -1,0 +1,85 @@
+.widget 
+	@extend $block	
+	text-align center
+	border-bottom 1px solid #e0e0e0
+	padding-bottom 1em
+	overflow hidden 
+.widget-title
+	color $gray
+	&:hover
+		color $hover-clr 	
+
+//pofile
+#personal-card	
+	text-align center
+	padding 0.8em		
+#descrption
+	color gray
+	font-size 0.8em
+#avatar
+	display block
+	margin 0 auto
+	padding 0 auto
+	width 80%
+	border-radius 12%
+#location
+	display block
+	font-size 12px
+	color  #aaa
+//social link
+#social
+	margin 2em auto
+//count
+#count	
+	overflow hidden	
+	div
+		text-align center
+		width 50%
+		float left
+.count-item	
+	&:hover
+		color $hover-clr				
+//recent posts
+.recent-posts-item
+	@extend $radius
+	display block
+	margin 0.8em 0
+	overflow hidden
+	padding 0.1em
+	&:hover
+		background $item-hover-clr
+		color $hover-clr
+	
+
+//categories
+.categories-item
+	@extend $radius
+	clear both
+	display block
+	margin 0.1em 0.2em
+	padding 0.2em
+	overflow hidden
+	&:hover
+		background $item-hover-clr
+		color $hover-clr		
+		
+.categories-count
+	border-bottom 1px solid #848484
+	
+	
+
+
+//tag
+.tag-item
+	@extend $tags	
+	border 1px solid $border-clr
+	padding 0 10px	
+	margin-bottom 0.3em
+	&:hover
+		background $item-hover-clr
+		color $hover-clr	
+		border 1px solid $hover-clr 
+//link
+.link-item
+	font-size 0.8em
+	

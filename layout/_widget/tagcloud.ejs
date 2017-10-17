@@ -1,0 +1,11 @@
+	<% if (site.tags.length){ %>
+  <div class="widget">
+
+     <a href="<%- url_for(theme.menu.tags) %>"><h3 class="widget-title"><%=  __('Sidebar.TagCloud') %></h3></a>
+
+			<% site.tags.each(function (tag){ %>
+    		<a class="tag-item" href="<%- url_for(tag.path)%>"><%- tag.name%></a>    		
+    	<%})%>
+
+  </div>
+<% } %>

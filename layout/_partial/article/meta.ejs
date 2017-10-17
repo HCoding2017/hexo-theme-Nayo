@@ -1,0 +1,22 @@
+	<% if( post.tags &&  post.tags.length > 0 ) {%>
+		<ul class="ul small-tag">
+			<li class="li iconfont icon-tag"></li>
+			<%- list_tags( post.tags ,{
+				show_count:false,
+				style:'none',
+				sperator:" ",
+			}) %>
+		</ul>
+	<% }%>
+	
+	<% if( post.categories && post.categories.length > 0 ) {%>
+		<ul class="ul small-tag">
+			<li class="li iconfont icon-category"></li>
+			<%- list_categories( post.categories ,{
+				show_count:false,
+				style:'none',
+				sperator:"  ",
+			}) %>
+		</ul>
+
+	<% }%>

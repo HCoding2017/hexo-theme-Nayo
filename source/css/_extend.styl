@@ -1,0 +1,64 @@
+
+$block
+  heigth auto
+  margin 1.4em auto
+  padding 1.4em .6em
+  background $block-bgr
+  border-radius 10px
+.block
+  @extend $block
+  
+$small-block
+  heigth auto
+  padding .9em
+  background $block-bgr
+  border-radius 10px
+
+
+$tags
+  padding 0.4em
+  margin  0.2em auto
+  border 1px solid $border-clr 
+  border-radius 999em
+  display inline-block
+ 
+$radius
+  border-radius 10px	
+ 
+
+ 
+
+
+//fadein and fadeout
+@keyframes fadein
+    from
+      opacity 0
+    to 
+      opacity 1
+@-webkit-keyframes fadein
+    from
+      opacity 0
+    to 
+      opacity 1       
+.fadein 
+  -webkit-animation-name: fadein
+  -webkit-animation-duration 2.1s  
+  -webkit-animation-iteration-count 1 
+  -webkit-animation-delay 0s
+
+@keyframes fadeout
+    from
+      opacity 1
+    to 
+      opacity 0
+@-webkit-keyframes fadeout
+    from
+      opacity 1
+    to 
+      opacity 0
+      
+.fadeout
+  -webkit-animation-name: fadeout
+  -webkit-animation-duration  2.1s  
+  -webkit-animation-iteration-count 1 
+  -webkit-animation-delay 0s

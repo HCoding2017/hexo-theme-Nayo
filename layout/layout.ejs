@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html>
+  <%- partial('_partial/head') %>
+
+  <body> 
+  	<%- partial('_partial/header', null, {cache: !config.relative_link}) %> 
+  
+     <div class="container">  
+      <% if( is_post() || is_current('about')){ %>
+          <%- body %>              
+      <%}else{%>     
+          <section id="main"><%- body %></section>
+          <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %> 
+          <% } %>  
+    </div>        
+    <div class="back-to-top iconfont icon-backtotop"></div>    
+    <%- partial('_partial/footer') %>
+    <%- partial('_partial/after-footer')%>
+  </body>
+</html>

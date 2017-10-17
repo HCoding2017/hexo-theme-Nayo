@@ -1,0 +1,25 @@
+Menu:
+  home: Home
+  categories: Categories
+  tags: Tags
+  archives: Archives
+  about: About
+Page:
+  Archives: Archives
+  Categories: Categories
+  Tags: Tags
+  About: About
+Sidebar:
+  Posts: Posts
+  Categories: Categories
+  Recents: Recents
+  TagCloud: TagCloud
+
+Paginator: 
+  Prev: Prev
+  Next: Next
+
+Read_more: More 
+Untitled: Untitled
+
+

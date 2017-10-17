@@ -1,0 +1,43 @@
+
+<% if(theme.toc){  %>
+
+  <%- partial('_partial/post/toc',{post:page}) %>
+
+<% } %>
+
+
+<article id="post" class="post fadein">
+
+<div class="post-content">
+  <div class="post-title">
+    <h1 class="title"><%= page.title|| __('Untitled') %></h1>
+  </div>
+  
+  <div class="post-time iconfont icon-date">
+    <%- date(page.date, "YYYY-MM-DD hh:mm:ss")%> 
+  </div>
+
+
+  <div class="post-content">
+
+   <% if (page.photos && page.photos.length){ %>
+        <% for( i in page.photos){%>
+          <img src="<%- url_for(page.photos[i]) %>">             
+        <%}%>
+    <%}%>
+
+
+      <%- page.content %>    
+  </div>  
+  
+ 
+  <div class="post-meta">   
+         <%- partial('_partial/article/meta',{post: page}) %> 
+  </div> 
+ 
+  
+</article>
+
+
+<%- partial('_partial/post/nav',{post: page}) %> 
+<%- partial('_partial/post/wdigets',{post: page}) %> 

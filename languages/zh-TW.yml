@@ -1,0 +1,25 @@
+Menu:
+  home: 首頁
+  categories: 分類
+  tags: 標籤
+  archives: 歸檔
+  about: 關於
+Page:
+  Archives: 歸檔
+  Categories: 分類
+  Tags: 標籤
+  About: 關於
+Sidebar:
+  Posts: 文章
+  Categories: 分類
+  Recents: 最近文章
+  TagCloud: 標籤
+
+Paginator: 
+  Prev: 上一頁
+  Next: 下一頁
+
+Read_more: More 
+Untitled: 無標題
+
+

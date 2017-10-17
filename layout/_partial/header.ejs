@@ -1,0 +1,25 @@
+<header class="header">
+  <nav class="header-nav">
+   <div class="info">
+
+    <% if(theme.profile.logo ){%>
+      
+    <h3 id="logo">
+    <a href="<%- url_for() %>"><%= theme.profile.logo %></a>
+    </h3>
+
+    <%} %>
+
+    <div class="mobile menu">
+      <ul class="ul">
+      <% for (var i in theme.menu){ %>     
+          <li class="li"> 
+          <a class="menu-link" id="menu-<%-i%>" href="<%- url_for(theme.menu[i]) %>"><%= __('Menu.'+i) %></a>
+          </li>
+        <% } %>      
+      <ul>
+    </div>
+
+    </div>     
+  </nav>
+</header>

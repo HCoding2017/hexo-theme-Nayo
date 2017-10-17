@@ -1,0 +1,37 @@
+<section class="block fadein">
+
+  <% var title %>
+
+  <% if( is_category()){ %>
+
+  	<% title = page.category %>
+  	<h1 class="title"><%= title %></h1>		
+  	
+	 <% page.posts.each(function (post) { %>    	
+    <%- partial('_partial/article',{ post:post}) %> 
+	<% }) %>
+
+  	%>
+
+  <%} else {%>	  
+
+  <% title = __('Page.Categories')%>
+  <h1 class="title"><%= title %></h1>	
+
+    <% site.categories.forEach( function ( category ){%>
+    <div class="category-item">
+      <a 
+         class="category-name iconfont icon-detail " href="<%- url_for(category.path)%>"> <%- category.name %> </a>
+      <ul class="category-posts">
+          <% category.posts.each(function (post){ %>
+              <li class="iconfont icon-article">
+              <a href="<%- url_for(post.path) %>"><%= post.title || __('Untitled') %> </a> 
+              </li>
+          <% }) %>  
+      </ul>
+   </div>
+    <%}) %>
+  <%}%>
+   </h3>
+
+</section>

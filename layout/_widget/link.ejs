@@ -1,0 +1,9 @@
+<% if (theme.link) {%>	
+	<ul class="ul">
+		<% for (i in theme.link) {%>
+			<li class="li link-item">
+				<a href="<%- url_for( theme.link[i])%>" target="_blank" title="<%- i %>"><%- i %></a>
+			</li>
+		<% } %>
+	</ul>
+<%}%>
