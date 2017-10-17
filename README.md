@@ -1,16 +1,14 @@
----
-title: README
-date: 2017-10-16 21:14:43
-tags: Nayo
----
+# hexo-theme-Nayo
+
 #### This post will help you to install Nayo themes and configure.
+
 <!--more-->
-# Preview
+# Preview 预览
 
 ## preview site : [synch](http://synch.site)
 
 ***
-# Installation
+# Installation 安装主题
 
 ### 1. Get Nayo from github
 ```
@@ -28,7 +26,7 @@ theme: Nayo
 
 ***
 
-# Theme Setting
+# Theme Setting 主题设置
 
 ### nayo/_config.yml
 ```
@@ -108,7 +106,7 @@ baidu_analytics:
 google_analytics: 
 ```
 ***
-# Content
+# Content 内容显示
 
 ## about
 ```
@@ -124,7 +122,7 @@ layout: about
 //your content here
 ```
 ***
-# Other
+# Other 其他
 Contact me :) 
 ### Email 
 lemonreds@163.com
