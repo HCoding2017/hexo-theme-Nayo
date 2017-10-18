@@ -5,7 +5,7 @@
   <% if( is_category()){ %>
 
   	<% title = page.category %>
-  	<h1 class="title"><%= title %></h1>		
+  	<h3><%= title %></h3>		
   	
 	 <% page.posts.each(function (post) { %>    	
     <%- partial('_partial/article',{ post:post}) %> 
@@ -16,7 +16,7 @@
   <%} else {%>	  
 
   <% title = __('Page.Categories')%>
-  <h1 class="title"><%= title %></h1>	
+  <h3><%= title %></h3>	
 
     <% site.categories.forEach( function ( category ){%>
     <div class="category-item">

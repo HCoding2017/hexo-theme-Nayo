@@ -53,7 +53,7 @@ var last_scroll = 0;
 
     $(window).scroll(function() {
     //silde down
-    if( last_scroll !=0){       
+    if( last_scroll !=0 && isPC()){       
         if($(window).scrollTop() - last_scroll > 0   || $(window).scrollTop() == 0) {
         //下滑
         hideHeader();

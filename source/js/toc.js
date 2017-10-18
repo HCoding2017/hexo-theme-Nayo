@@ -34,7 +34,6 @@ $(function(){
 		var li = "<li id=\"toc-item-"+ i +"\"   class=\"toc-item\" >" + html +"</li>";
 		$toc.append(li);
 
-
 		//获取到下一个第一级目录中的所有元素
 		var $sub = $(this).nextUntil('h1');
 		//遍历判断添加
@@ -46,8 +45,9 @@ $(function(){
 				var sub_id = "content-subitem" + i + j ;
 				$(this).attr("id",sub_id);
 				//创建html语句				
-				//裁剪string					
-				var sub_html = cutHtml ($holder,34);
+							
+				var sub_html = cutHtml ($holder,44);
+				//var sub_html = $holder.text();
 
 				var sub_li = "<li id=\"toc-subitem-"+ i +j + "\" class =\"toc-subitem\">" + sub_html + " </li>" ;
 				$toc.append(sub_li);

@@ -1,6 +1,5 @@
 <section class="block fadein">
-  <h3><%= __('Page.Archives') %></h3>  
-	    
+  <h3><%= __('Page.Archives') %></h3>  	    
    
     <% var last%> 
     <% page.posts.each(function (post) { %>
@@ -20,7 +19,7 @@
          <%= date(post.date, "MM-DD") %>
         </span>   
 
-        <% var title = truncate(post.title, {length:94}) %>
+        <% var title = truncate(post.title, {length:84}) %>
         <a class="left archive-title" href="<%- url_for(post.path) %>"><%= title || __('Untitled')%></a>
       </div>
 
