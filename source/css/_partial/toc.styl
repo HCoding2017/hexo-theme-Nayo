@@ -1,45 +1,58 @@
-#toc
-	@extend $small-block
-#toc{
-	color : gray ;
-	overflow:  auto;
-}
-.toc-title{
-	font-size 1.4em
+
+.toc{	
+	color  gray 
+	overflow hddien
+	position absolute
+    top 0%
+    left 87% 
+    width 30%
 }
 
 .toc-container{	
-	margin: auto 0;
-	height: 100%;  	
- 	width : auto; 
+	margin auto 0
+	height 100%	
+ 	width  auto  
 }
-#contents{
-	overflow: visible;
-	font-size: 1.1em;
-	cursor :pointer;
+.contents{	
+	display block
+	padding .2em
+	font-size:1.1em	
+	cursor:pointer
 }
-.toc-item {
-	display:block;
-	font-size: 1em;	
-	padding-left .4em
-	font-weight: $font-normal
+
+.toc-list{
+   list-style-type none
+   display inline-block
+   margin-top 1em 
+   margin-left 0
+   padding 0
+}
+.toc-item {	
+	display block	
+	font-size 1em
+	font-weight $font-normal
 }
 .toc-item:hover{
-	cursor: pointer;
-	color : $hover-clr;
-	margin-left :.3em;
+	cursor pointer
+	color $hover-clr
+	margin-left .3em
 }
-
 
 .toc-subitem {
-	display:block;
-	font-size: .9em;	
-	color :$gray;
-	margin-left: 0.6em;
-	font-weight: $font-normal
+	display block
+	font-size .9em	
+	color $gray
+	margin-left 0.6em
+	font-weight $font-normal
 }
 .toc-subitem:hover{
-	cursor: pointer;
-	color : $hover-clr;
-	margin-left :0.8em;
+	cursor pointer
+	color  $hover-clr
+	margin-left 0.8em
+}
+
+
+.toc-fixed{
+	position fixed 
+	top 0 
 }

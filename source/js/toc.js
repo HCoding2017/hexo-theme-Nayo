@@ -1,17 +1,14 @@
 function change(){
-	var $a = $('#contents');
+	var $a = $('.contents');
 
 	if( $a.hasClass( "icon-open" )){
 	//open
 	$('.toc-list').hide();
-
 	$a.removeClass("icon-open");
 	$a.addClass("icon-close");
-
-	}else{ //hasClass (close)
+	}else{ 
 	//hide
 	$('.toc-list').show();
-
 	$a.removeClass("icon-close");
 	$a.addClass("icon-open");
 	}
@@ -29,7 +26,7 @@ $(function(){
 		$(this).attr("id",id);
 
 		//添加第一级目录	
-		var html = cutHtml($(this),26);	
+		var html = $(this).text();
 		
 		var li = "<li id=\"toc-item-"+ i +"\"   class=\"toc-item\" >" + html +"</li>";
 		$toc.append(li);
@@ -44,17 +41,13 @@ $(function(){
 				//添加第二级目录的id
 				var sub_id = "content-subitem" + i + j ;
 				$(this).attr("id",sub_id);
-				//创建html语句				
-							
-				var sub_html = cutHtml ($holder,44);
-				//var sub_html = $holder.text();
-
+				//创建html语句						
+				var sub_html = $holder.text();
 				var sub_li = "<li id=\"toc-subitem-"+ i +j + "\" class =\"toc-subitem\">" + sub_html + " </li>" ;
 				$toc.append(sub_li);
-				//console.log( sub_id );
-				//绑定第二级点击跳转时间				
-				$('#toc-subitem-'+i+j).click(function(){
-					//console.log('#toc-subitem-'+i+j);
+
+				//绑定第二级点击跳转事件				
+				$('#toc-subitem-'+i+j).click(function(){			
 					scrollToId(sub_id);
 				});
 			}
@@ -86,7 +79,7 @@ $(function(){
                 }
             		
             	if($(window).scrollTop() < 90){
-               		clearlayout($(".toc-container"));
+               		removelayout($(".toc-container"));
 				}                
 
 				//判断滚动条是否到底部 是的话则隐藏toc
@@ -97,8 +90,8 @@ $(function(){
 				var hide_h = $(window).height(); //上方被隐藏的文档的高度
 
 				if(document_h -( hide_h + scrollTop_h) <= 40 ){
-					//console.log('已经到了底部');				
-					clearlayout($(".toc-container"));
+					//'已经到了底部'				
+					removelayout($(".toc-container"));
 				}
 
             });
@@ -107,23 +100,12 @@ $(function(){
 
 
 // 更换到绝对布局
-function fixlayout( $obj){
-
-	$obj.css({
-			'position':'fixed',			
-			'left': '10%',
-			'top': '10%',				
-		});
-
+function fixlayout( $obj){	
+	$obj.addClass('toc-fixed');
 }
 // 清空之前的绝对布局
-function clearlayout( $obj ){
-
-	//fade out - todo
-
-	$obj.css({
-			'position':'static'						
-	});
+function removelayout( $obj ){	
+	$obj.removeClass('toc-fixed');
 }
 
 
@@ -145,14 +127,3 @@ function isPC() {
            }  
            return flag;  
 }           
-
-//cut html text to avoid hide the text
-function cutHtml( $ojb , length){
-
-	var $clone = $ojb.clone();
-	var str = $clone.text();
-	$clone = null;
-	if(str.length < length) return str;
-	else return str.substring(0,length-1)+"...";
-
-}

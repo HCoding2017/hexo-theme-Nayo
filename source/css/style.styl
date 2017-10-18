@@ -17,16 +17,16 @@ html,body
   font-weight  $font-weight 
    
 h1
-    font-size 1.5em
+    font-size 1.6em
     font-weight $font-blod 
 h2  
-    font-size 1.3em
+    font-size 1.4em
     font-weight $font-normal 
 h3
-    font-size 1.1em
+    font-size 1.2em
     font-weight $font-normal 
 h4
-    font-size 1em
+    font-size 1.1em
     font-weight $font-normal 
 h5,h6
     font-size 1em
@@ -56,10 +56,15 @@ img
 
 fullscreen = hexo-config("fullscreen")
 .container  
-  padding 0 auto
   margin 0 auto
-  margin-top 2em
-  
+  margin-top 2em 
+  @media mq-normal
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
 
 if  fullscreen is true
   .container
@@ -69,12 +74,6 @@ else
   .container
      @media mq-normal
       max-width 70%
-
-    
-.line  
-  width 100% 
-  border-bottom 1px solid $line-clr 
-  clear both
   
 .left
   float left
@@ -114,14 +113,9 @@ else
   @media mq-normal
     column(sidebar-column)
 #post
-  @media mq-normal
-    column(post-column)
-#toc
-  @media mq-normal
-    column(toc-column) 
-
+  position relative
+  width 70%  
   
-
   
 sidebar = hexo-config("sidebar")
 
@@ -137,18 +131,14 @@ else
 
 toc = hexo-config("toc")
 
-if toc is true
-  #toc 
-    column(toc-column)
-else
-  #post
-    column(container-column)
-
+if toc is false
+    #toc
+      display none
 
     
 /*定义滚动条背景*/
 ::-webkit-scrollbar 
-    width 10px //y
+    width 8px //y
     height 8px //x
     background-color $gray   
 /*轨道 内阴影+圆角*/  

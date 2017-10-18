@@ -1,9 +1,12 @@
 <%- js('js/toc.js')%>
 
-<div id="toc">	
-	<a id="contents" class="iconfont icon-open toc-title" onclick="change()"> <%= __('Contents')%> </a>
+<div class="toc">		
 	<div class="toc-container">	
-	<ul class="toc-list ul"></ul>
+
+	<span class="contents iconfont icon-open" onclick="change()"> <%= __('Contents')%> </span>
+
+	<ul class="toc-list"></ul>
+
 	</div>
 </div>
 
