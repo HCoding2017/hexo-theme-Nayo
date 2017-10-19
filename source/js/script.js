@@ -9,31 +9,32 @@ $(function(){
 	})
 })
 
+
 // set clicked menu underline
  $(function(){  
-   	// get the url
+   // get the url
  	var href = window.location.href;
  	// find the clicked menu
  	var clicked_menu = null;
  	if( href.indexOf("archives") > 0){
 
- 		clicked_menu = $('#menu-archives');
+ 		clicked_menu = $('#header-menu-archives');
 
  	}else if( href.indexOf("categories") > 0 ){
 
- 		clicked_menu = $('#menu-categories');
+ 		clicked_menu = $('#header-menu-categories');
 
  	}else if( href.indexOf("tags") > 0 ){
 
- 		clicked_menu  = $('#menu-tags');
+ 		clicked_menu  = $('#header-menu-tags');
 
  	}else if( href.indexOf("about") > 0 ){
 
- 		clicked_menu  =  $('#menu-about');
+ 		clicked_menu  =  $('#header-menu-about');
 
  	}else { //default : index
 
- 		clicked_menu = $('#menu-home');
+ 		clicked_menu = $('#header-menu-home');
  	}
  	// set clicked menu underline
  	var border = "border-bottom";
@@ -46,17 +47,18 @@ $(function(){
 
 var last_scroll = 0;
 // windos scroll function
-// back to top and show the header when you slide down
-
  $(function() {
             
 
     $(window).scroll(function() {
     //silde down
-    if( last_scroll !=0 && isPC()){       
-        if($(window).scrollTop() - last_scroll > 0   || $(window).scrollTop() == 0) {
+    if( last_scroll !=0){             
+        if(  $(window).scrollTop() == 0 ){
+          setHeader();
+
+        }else if($(window).scrollTop() - last_scroll > 0 ) {
         //下滑
-        hideHeader();
+        hideHeader();        
         }else{
         //上划
         showHeader(); 
@@ -68,7 +70,8 @@ var last_scroll = 0;
 
     //back to top
     if(isPC()){
-    if ($(window).scrollTop() > 800 ){
+
+       if ($(window).scrollTop() > 800 ){
             $('.back-to-top').show();
         }
         else{
@@ -79,52 +82,58 @@ var last_scroll = 0;
 
          $('.back-to-top').click(function() {
             $('html, body').animate({scrollTop: 0}, 1000);     
-            $(window).scrollTop() = 0; //??? stranger fixed bug here 
-
+            $(window).scrollTop() = 0; 
         });
 
-
-      
 
  });
 
 });
 
 
-
-
 function showHeader(){
 
-    $('.header-nav').css({
+    $('.header').css({
         'position':'fixed',  
         'top': '0',
         'left': '0',
         'opacity' :'0.8',
-        'background-color': 'rgba(255,255,255,.9)',  
+        'background-color': '#fff', 
         'transition':'0.6'    
     });
+    $('.header').addClass('slideDown').removeClass('slideUp');
+
 }
 
 function hideHeader( ){
 
-    $('.header-nav').css({
-          'position':'static',  
-          'opacity' :' 1',
-            'background-color': '#F5F6FA',
-           'border-radius':'10px'
+  　 $('.header').addClass('slideUp').removeClass('slideDown');
+
+  
+}
+function setHeader(){
+    $('.header').css({
+        'position' :'static',
+        'opacity' :' 1',
+        'background-color': '#F5F6FA',
+        'border-radius':'10px'  ,
+        'box-shadow ':'10px 0 20px 0 red',
         
     });
+    
+    $('.header').removeClass('slideUp').removeClass('slideDown');
 }
 
 
 
-//
+
+
 function isPC(){  
-           var userAgentInfo = navigator.userAgent;  
-           var Agents = new Array("Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod");  
-           var flag = true;  
-           for (var v = 0; v < Agents.length; v++) {  
-               if (userAgentInfo.indexOf(Agents[v]) > 0) { flag = false; break; }  
-           }  
-           return flag;  
+    var userAgentInfo = navigator.userAgent;  
+    var Agents = new Array("Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod");  
+    var flag = true;  
+    for (var v = 0; v < Agents.length; v++) {  
+    if (userAgentInfo.indexOf(Agents[v]) > 0) { flag = false; break; }  
+    }  
+    return flag;  
 }            

@@ -1,10 +1,11 @@
-	<% if( post.tags &&  post.tags.length > 0 ) {%>
+<div class="meta">
+<% if( post.tags &&  post.tags.length > 0 ) {%>
 		<ul class="ul small-tag">
 			<li class="li iconfont icon-tag"></li>
 			<%- list_tags( post.tags ,{
 				show_count:false,
 				style:'none',
-				sperator:" ",
+				separator:" "
 			}) %>
 		</ul>
 	<% }%>
@@ -15,8 +16,8 @@
 			<%- list_categories( post.categories ,{
 				show_count:false,
 				style:'none',
-				sperator:"  ",
+				separator:" "
 			}) %>
 		</ul>
-
 	<% }%>
+</div>

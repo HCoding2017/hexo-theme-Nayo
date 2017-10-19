@@ -6,6 +6,7 @@
 @import "_highlight/highlight"
 @import "_extend"
 
+
 html,body
   height 100%
   width 100%
@@ -17,19 +18,19 @@ html,body
   font-weight  $font-weight 
    
 h1
-    font-size 1.6em
+    font-size 1.4em
     font-weight $font-blod 
 h2  
-    font-size 1.4em
-    font-weight $font-normal 
-h3
     font-size 1.2em
     font-weight $font-normal 
-h4
+h3
     font-size 1.1em
     font-weight $font-normal 
-h5,h6
+h4
     font-size 1em
+    font-weight $font-normal 
+h5,h6
+    font-size .9em
     font-weight $font-normal 
     
 .ul,.li
@@ -53,6 +54,9 @@ img
   &:hover
     opacity 0.8
 
+::selection 
+  background $blue 
+  color $white
 
 fullscreen = hexo-config("fullscreen")
 .container  

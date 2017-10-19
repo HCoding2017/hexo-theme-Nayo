@@ -1,13 +1,8 @@
 <article id="post" class="post fadein">
 
 <div class="post-content">
-  <div class="post-title">
-    <h1 class="title"><%= page.title|| __('Untitled') %></h1>
-  </div>
-  
-  <div class="post-time iconfont icon-date">
-    <%- date(page.date, "YYYY-MM-DD hh:mm:ss")%> 
-  </div>
+ 
+<%- partial('_partial/post/head',{post: page}) %> 
 
 
   <div class="post-content">
@@ -18,16 +13,11 @@
         <%}%>
     <%}%>
 
-
       <%- page.content %>    
+
   </div>  
-  
  
-  <div class="post-meta">   
-         <%- partial('_partial/article/meta',{post: page}) %> 
-  </div> 
- 
-  
+<%- partial('_partial/article/meta',{post: page}) %> 
 <%- partial('_partial/post/nav',{post: page}) %> 
 <%- partial('_partial/post/wdigets',{post: page}) %> 
 </article>

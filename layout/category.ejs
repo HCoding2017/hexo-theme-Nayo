@@ -20,8 +20,8 @@
 
     <% site.categories.forEach( function ( category ){%>
     <div class="category-item">
-      <a 
-         class="category-name iconfont icon-detail " href="<%- url_for(category.path)%>"> <%- category.name %> </a>
+      <a class="category-name iconfont icon-detail " href="<%- url_for(category.path)%>"> <%- category.name %> </a>
+
       <ul class="category-posts">
           <% category.posts.each(function (post){ %>
               <li class="iconfont icon-article">

@@ -4,15 +4,18 @@
       <div class="left">
         <a class="bottom-link" href="<%- url_for(page.prev.path) %>">  
            <lil class="li iconfont icon-left"></li>         
-          <span class="bttom-link-title"><%= page.prev.title || '(no title)' %></span>
+            <% var title = truncate(page.prev.title , {length:60}) %>  
+          <span class="bttom-link-title"><%= title || '(no title)' %></span>
         </a>
       </div>
     <% } %>
 
     <% if (page.next) { %>
-       <div class="right">
-        <a  class="bottom-link" href="<%- url_for(page.next.path) %>">          
-         <span class="bttom-link-title"><%= page.next.title || '(no title)' %></span>
+       <div class="right">      
+        <a  class="bottom-link" href="<%- url_for(page.next.path) %>">      
+
+         <% var title = truncate(page.next.title, {length:60}) %>    
+         <span class="bttom-link-title"><%= title || '(no title)' %></span>
           <li class="li iconfont icon-right"></li>
         </a>
         </div>

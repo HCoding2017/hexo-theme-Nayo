@@ -1,5 +1,5 @@
 
-// code from https://github.com/iissnan/hexo-theme-next
+// keyword from https://github.com/iissnan/hexo-theme-next
 // to highlight the code 
 @import "theme"
 
@@ -10,14 +10,13 @@ $code-block {
   padding: 0;
   font-size $code-font-size;
   color: $highlight-foreground;
-  background: $highlight-background;
-  
+  background: $highlight-background;  
   line-height: $line-height-code-block;
 }
 
 blockquote
-  border-left 2px solid $blockquote-clr
-  padding-left 0.2em
+  border-left 3px solid  $highlight-blue 
+  padding-left .5em
   
 
 pre, code { 
@@ -48,7 +47,7 @@ pre {
 
 .highlight {
   @extend $code-block;
-  border-radius: 1px
+  border-radius: 10px
 
   pre {
     border: none;
@@ -87,7 +86,7 @@ pre {
     padding-right: 10px
     color: $highlight-gutter.color
     text-align: right
-    background-color: $highlight-gutter.bg-color
+    background-color: $highlight-background
   }
 
   .code pre {

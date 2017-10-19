@@ -52,15 +52,12 @@ $(function(){
 				});
 			}
 		
-		})
-		
+		})	
 
 		//绑定第一级点击跳转事件
 		$('#toc-item-'+i).click(function(){
 			scrollToId(id);
 		})
-
-
 	})
 
 })
@@ -117,13 +114,3 @@ function scrollToId(id) {
 }
 
 
-// pc or mobile (responsive design)
-function isPC() {  
-           var userAgentInfo = navigator.userAgent;  
-           var Agents = new Array("Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod");  
-           var flag = true;  
-           for (var v = 0; v < Agents.length; v++) {  
-               if (userAgentInfo.indexOf(Agents[v]) > 0) { flag = false; break; }  
-           }  
-           return flag;  
-}           

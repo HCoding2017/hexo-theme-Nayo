@@ -1,6 +1,18 @@
  <% var year = date(new Date(), 'YYYY') %>
 <footer id="footer">
 	<div>
+
+	 <%= __('Powered-') %> 
+
+	 <a href="http://hexo.io/" target="_blank">Hexo</a>
+
+	 <%= __('Theme-') %>
+
+	 <a href="https://github.com/Lemonreds/hexo-theme-Nayo" target="_blank">Nayo</a> 
+
+
+	 <br>  
+	 
 	 &copy; 
 	 <% if (year!='2017'){ %>
 	 	2017-
@@ -10,14 +22,7 @@
 	 <%= theme.profile.author || 'Synch' %>
 	 
 
-	 <br>
-     <%= __('Powered-') %> 
-
-	 <a href="http://hexo.io/" target="_blank">Hexo</a>
-
-	 <%= __('Theme-') %>
-
-	 <a href="https://github.com/Lemonreds/hexo-theme-Nayo" target="_blank">Nayo</a> 
+	
 
 	</div>
  

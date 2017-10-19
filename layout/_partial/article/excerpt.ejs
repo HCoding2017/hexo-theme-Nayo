@@ -19,12 +19,9 @@
 
 <div class="bottom">
 	
-	<div class="left">	
-	 <%- partial('_partial/article/meta',{post:post}) %>	
-	</div>
-
-
-	<div class="right">
-	<a class="article-read-more" href="<%- url_for(post.path) %>"><%= __('Read_more') %></a> 
-	</div>
+    <%- partial('_partial/article/meta',{post:post}) %>	
+	
+	
+	<a class="right article-read-more" href="<%- url_for(post.path) %>"><%= __('Read_more') %></a> 
+	
 </div>
