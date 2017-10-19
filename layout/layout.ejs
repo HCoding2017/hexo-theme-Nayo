@@ -1,6 +1,6 @@
 <!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
 <html>
-  <%- partial('_partial/head') %>
+  <%- partial('_partial/head',null, {cache: !config.relative_link}) %> 
 
   <body> 
   	<%- partial('_partial/header', null, {cache: !config.relative_link}) %> 
@@ -13,8 +13,10 @@
           <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %> 
           <% } %>  
     </div>        
-    <div class="back-to-top iconfont icon-backtotop"></div>    
-    <%- partial('_partial/footer') %>
-    <%- partial('_partial/after-footer')%>
+
+    <div class="back-to-top iconfont icon-backtotop fadeIn"></div>    
+
+    <%- partial('_partial/footer',null, {cache: !config.relative_link}) %> 
+    <%- partial('_partial/after-footer' ,null, {cache: !config.relative_link}) %> 
   </body>
 </html>

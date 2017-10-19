@@ -38,7 +38,7 @@ $(function(){
  	}
  	// set clicked menu underline
  	var border = "border-bottom";
- 	var border_type = "1.5px solid #0088cc";
+ 	var border_type = "2px solid #0088cc";
  	clicked_menu.css(border,border_type);
 
 });  

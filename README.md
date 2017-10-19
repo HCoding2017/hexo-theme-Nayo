@@ -1,11 +1,12 @@
 # hexo-theme-Nayo
 
+#### a clean theme for [Hexo](https://hexo.io).
 #### This post will help you to install Nayo themes and configure.
 
 <!--more-->
 # Preview 预览
 
-## preview site : [synch](http://synch.site)
+## live preview  : [在线预览 synch](http://synch.site)
 
 ***
 # Installation 安装主题
@@ -108,8 +109,9 @@ google_analytics:
 ***
 # Content 内容显示
 
-## about
+## about page
 ```
+cd yourblog
 hexo new page about
 
 Modify layout in yourblog/source/about/index.md

@@ -56,7 +56,7 @@ link:
   linkb: //www.google.com
   linkc: //synch.site
 # linkd
-# toc of post  [ true or false]  
+# toc of post  [true or false]  
 toc:
     true
 
