@@ -17,6 +17,24 @@
   -webkit-animation-delay 0s
 
 
+@keyframes fadeOut
+    from
+      opacity 1
+    to 
+      opacity 0
+@-webkit-keyframes fadeOut
+    from
+      opacity 1
+    to 
+      opacity 0     
+
+.fadeOut 
+  -webkit-animation-name: fadeOut
+  -webkit-animation-duration 2s  
+  -webkit-animation-iteration-count 1 
+  -webkit-animation-delay 0s
+
+
 
 
 //slideUp and slideDown
@@ -26,8 +44,8 @@
     transform:translateY(0)
     }
    100%{
-    -webkit-transform:translateY(-200px)
-    transform:translateY(-200px)
+    -webkit-transform:translateY(-100px)
+    transform:translateY(-100px)
    }
 }
     
@@ -37,7 +55,7 @@
     -webkit-transform:translateY(0)    
     }
    100%{
-    -webkit-transform:translateY(-200px)
+    -webkit-transform:translateY(-100px)
    }
 }
 
@@ -54,8 +72,8 @@
 
 @keyframes slideDown{
     0%{
-    -webkit-transform:translateY(-200px)  
-    transform:translateY(-200px)   
+    -webkit-transform:translateY(-100px)  
+    transform:translateY(-100px)   
   }
     100%{
     -webkit-transform:translateY(0)
@@ -64,7 +82,7 @@
 }
 @-webkit-keyframes slideDown{
     0%{
-    -webkit-transform:translateY(-200px)    
+    -webkit-transform:translateY(-100px)    
   }
     100%{
     -webkit-transform:translateY(0)

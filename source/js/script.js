@@ -69,7 +69,7 @@ var last_scroll = 0;
 
 
     //back to top
-    if(isPC()){
+   
 
        if ($(window).scrollTop() > 800 ){
             $('.back-to-top').show();
@@ -77,12 +77,12 @@ var last_scroll = 0;
         else{
             $('.back-to-top').hide();
         }
-    }
+  
 
 
          $('.back-to-top').click(function() {
-            $('html, body').animate({scrollTop: 0}, 1000);     
-            $(window).scrollTop() = 0; 
+            $('html,body').animate({scrollTop: 0}, 1000);     
+            $(window).scrollTop() = 0;
         });
 
 

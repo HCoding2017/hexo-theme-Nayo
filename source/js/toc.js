@@ -15,6 +15,7 @@ function change(){
 }
 
 $(function(){
+
 	//toc 容器
 	var $toc =  $('.toc-list');
 	//获取第一级目录	
@@ -68,6 +69,15 @@ $(function(){
 
    if(isPC()){
    $(window).scroll(function () {
+
+   				if( $(window).scrollTop() == 0){
+   					console.log(111);
+   				}else{
+   					console.log(222);
+   				}
+
+
+
    				//获取 toc 容器 到 document 的 距离
                 var a = $(".toc-container").offset().top;      
                           

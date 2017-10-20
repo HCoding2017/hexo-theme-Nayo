@@ -1,6 +1,6 @@
 <% var profile = theme.profile %>
 
-<div class="widget" id="personal-card">
+<div class="widget profile" id="personal-card">
 	<div id="author-avatar">
 
 		<a  href="<%= profile.avatar %>">
@@ -26,7 +26,8 @@
 
 	<div id="social">
     <% for (i in theme.social) { %>    	
-		  <a href="<%- url_for(theme.social[i]) %>" class="iconfont icon-<%-i%>" target="_blank" title="<%- i %>">		
+
+		  <a href="<%- url_for(theme.social[i]) %>" class="iconfont icon-<%-i%>" target="_blank" title="<%- i %>">	
           </a>
        
     <% } %>

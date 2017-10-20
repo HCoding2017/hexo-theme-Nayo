@@ -3,19 +3,23 @@
   @extend $block 
   overflow hidden  
  
-.article-top
+.article-top 
   margin 0 auto
   padding 10px 20px
   height 40px
   border-left 1.8px solid $gray
   border-bottom .8px solid $line-clr 
   margin-bottom .4em
+  display -webkit-flex
+  display flex
+  justify-content space-between
+  overflow hidden
   &:hover
     border-left 3px solid $hover-clr
     color $hover-clr    
     
 .article-top-title      
-    font-size 1.3em   
+    font-size 1.2em  
 
 .article-top-date
     color gray

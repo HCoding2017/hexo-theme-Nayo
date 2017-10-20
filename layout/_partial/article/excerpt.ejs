@@ -12,14 +12,13 @@
    <% } else { %>
   	<%- post.content %>    
 
-
   <% } %>  
 
 </div>
 
 <div class="bottom">
 	
-    <%- partial('_partial/article/meta',{post:post}) %>	
+    
 	
 	
 	<a class="right article-read-more" href="<%- url_for(post.path) %>"><%= __('Read_more') %></a> 

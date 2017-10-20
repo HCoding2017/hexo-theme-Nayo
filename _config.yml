@@ -41,20 +41,20 @@ recent_posts:
 #social link
 social:  
   github: https://github.com/Lemonreds
-  zhihu:
-  weibo:
+#  zhihu:
+#  weibo:
   segmentfault: 
   facebook:
   twitter:
   instagram:
   linkedin:
-  others:
+#  others:
 
 #your friend link
 link:
-  linka: //www.baidu.com
+  colorhexa: //www.colorhexa.com
   linkb: //www.google.com
-  linkc: //synch.site
+  synch: //synch.site
 # linkd
 # toc of post  [true or false]  
 toc:
