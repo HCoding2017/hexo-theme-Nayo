@@ -1,26 +1,16 @@
 .paginator
   margin 1em 0
-.prev,.next,.page-number 
-  padding .4em 
-  margin .1em
- 
+  font-size 1rem 
+.prev,.next,.page-number    
+  padding .5em 
+  margin .2em
+  border 1px solid $gray
+  border-radius 6px
+  &:hover
+     border 1px solid $hover-clr  
 .current
 	color $hover-clr
-.page-number,.prev,.next
-	&:hover
-		color $hover-clr
-.prev,.next  
-  width 40px
-  height auto
-  padding 10px
-  border 1px solid $gray
-  border-radius 10px
-  font-size 1.1em
-  &:hover
-		 border 1px solid $hover-clr
-  
-  
-.prev 
-  float left  
-.next
-  float right
+// .prev 
+//   float left  
+// .next
+//   float right

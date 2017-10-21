@@ -26,7 +26,7 @@ profile:
 # put avatar in theme/source/img
   logo: Nayo
   avatar: /img/header.jpg
-  author: SYNCH
+  author: Synch
   city: GuangZhou
   country: China
   descrption:  I just wanna be part of your symphony
@@ -53,9 +53,11 @@ social:
 #your friend link
 link:
   colorhexa: //www.colorhexa.com
-  linkb: //www.google.com
+  google: //www.google.com
   synch: //synch.site
-# linkd
+# linkd: 
+# linke:
+
 # toc of post  [true or false]  
 toc:
     true

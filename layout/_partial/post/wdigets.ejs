@@ -1,7 +1,7 @@
 
 <div class="bottom-widget">
   
-  <h4 class="bottom-widget-title iconfont icon-category"><a href="<%-url_for(theme.menu.categories || '(no title)' )%>"> <%- __('Categories')%></a></h4>
+  <h4 class="bottom-widget-title iconfont icon-category"><a href="<%-url_for(theme.menu.categories || '(no title)' )%>"> <%- __('Page.Categories')%></a></h4>
   <div class="small-tag">
       <% site.categories.sort('date',-1).each (function (category){%> 
         <a href="<%- url_for(category.path) %>"><%- category.name  %></a>     
@@ -13,7 +13,7 @@
 
 <div class="bottom-widget">
   
-  <h4 class="bottom-widget-title iconfont icon-tag"><a href="<%-url_for(theme.menu.tags || '(no title)' )%>"> <%- __('Tags')%></a></h4>
+  <h4 class="bottom-widget-title iconfont icon-tag"><a href="<%-url_for(theme.menu.tags || '(no title)' )%>"> <%- __('Page.Tags')%></a></h4>
   <div class="small-tag">
 
     <%- tagcloud(site.tags,{

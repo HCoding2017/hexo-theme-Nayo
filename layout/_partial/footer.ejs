@@ -1,6 +1,16 @@
- <% var year = date(new Date(), 'YYYY') %>
+<% var year = date(new Date(), 'YYYY') %>
 <footer id="footer">
-	<div>
+
+	<div class="social">
+    <% for (i in theme.social) { %>    	
+
+		  <a href="<%- url_for(theme.social[i]) %>" class="iconfont icon-<%-i%>" target="_blank" title="<%- i %>"></a>
+       
+    <% } %>
+    </div>
+    
+
+	<div class="link">
 
 	 <%= __('Powered-') %> 
 
@@ -11,7 +21,7 @@
 	 <a href="https://github.com/Lemonreds/hexo-theme-Nayo" target="_blank">Nayo</a> 
 
 
-	 <br>  
+	 <br/>  
 	 
 	 &copy; 
 	 <% if (year!='2017'){ %>
@@ -22,9 +32,7 @@
 	 <%= theme.profile.author || 'Synch' %>
 	 
 
-	
+	</div> 
 
-	</div>
- 
 
 </footer>
