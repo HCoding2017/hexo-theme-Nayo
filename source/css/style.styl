@@ -11,7 +11,6 @@
 
  
 
-
 html,body
   height 100%
   width 100%
@@ -67,13 +66,12 @@ fullscreen = hexo-config("fullscreen")
 .container  
   margin 0 auto
   margin-top 2em 
-  @media mq-normal
-    position: relative;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
 
 if  fullscreen is true
   .container
@@ -83,7 +81,11 @@ else
   .container
      @media mq-normal
       max-width 70%
-  
+      
+.container 
+  @media mq-tablet 
+     max-width 98%
+
 .left
   float left
 .right
@@ -103,27 +105,34 @@ else
     opacity 0.8
     z-index 5 
     bottom 10%
-    left 90%
-    @media mq-mobile
-      display none
+    left 90%  
     &:hover
       color $hover-clr
       border 1px solid $border-clr
       border-radius 10px
 
 #container 
-  @media mq-normal 
+  @media mq-normal     
     column(container-column)  
-#main  
+   
+#main    
   @media mq-normal
+    column(main-column)  
+  @media mq-tablet 
     column(main-column)  
     
 #sidebar
   @media mq-normal
     column(sidebar-column)
+  @media mq-tablet 
+    column(sidebar-column)
+    
 #post
   position relative
   width 70%  
+#post  
+   @media mq-tablet 
+    width 90%  
   
   
 sidebar = hexo-config("sidebar")
@@ -141,21 +150,25 @@ else
 toc = hexo-config("toc")
 
 if toc is false
-    #toc
+    .toc
       display none
+      
+.toc       
+  @media mq-tablet 
+    display none
+      
 
-    
-/*定义滚动条背景*/
+
 ::-webkit-scrollbar 
-    width 8px //y
-    height 8px //x
+    width 8px 
+    height 8px 
     background-color $gray   
-/*轨道 内阴影+圆角*/  
+
 ::-webkit-scrollbar-track  
     -webkit-box-shadow inset 0 0 6px rgba(0,0,0,0.3)  
     border-radius  10px
     background-color  $white   
-/*滑块 内阴影+圆角*/  
+
 ::-webkit-scrollbar-thumb  
     border-radius 10px
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3)  

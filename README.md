@@ -1,7 +1,7 @@
 # hexo-theme-Nayo
 
 #### a clean theme for [Hexo](https://hexo.io).
-#### This post will help you to install Nayo themes and configure.
+#### This post will help you to install Nayo theme and configure.
 
 <!--more-->
 # Preview 预览
@@ -130,3 +130,5 @@ Contact me :)
 lemonreds@163.com
 ### QQ 
 792277840
+
+have a nice day !
