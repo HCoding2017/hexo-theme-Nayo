@@ -66,12 +66,13 @@ fullscreen = hexo-config("fullscreen")
 .container  
   margin 0 auto
   margin-top 2em 
-  position: relative;
-  top: 0;
-  left: 0;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
+  @media mq-normal
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
 
 if  fullscreen is true
   .container
@@ -154,8 +155,8 @@ if toc is false
       display none
       
 .toc       
-  @media mq-tablet 
-    display none
+    @media mq-tablet 
+      display none
       
 
 
