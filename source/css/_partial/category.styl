@@ -4,14 +4,23 @@
 	margin 2em
 	
 .category-name
+	padding-left .8em
+	letter-spacing 1px
 	&:hover 
-		margin-left 0.9em
+		margin-left 0.3em
+		color $blue
 .category-posts 
 	display none
-	li 
-		display block
-		margin 1em		
-		&:hover
-			margin-left 0.2em
-	a
-		padding-left .9em
+	width 100%	
+.category-post-title	
+	padding-left .9em
+	display block
+	margin 1em
+	letter-spacing .5px		
+	&:hover		
+		margin-left 0.2em
+		border-left 2px solid $blue
+		color $blue
+.category-post-title	a
+	&:hover	
+		color $blue

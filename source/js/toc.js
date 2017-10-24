@@ -4,13 +4,11 @@ function change(){
 	if( $a.hasClass( "icon-open" )){
 	//open
 	$('.toc-list').hide();
-	$a.removeClass("icon-open");
-	$a.addClass("icon-close");
+	$a.removeClass("icon-open").addClass("icon-close");
 	}else{ 
 	//hide
 	$('.toc-list').show();
-	$a.removeClass("icon-close");
-	$a.addClass("icon-open");
+	$a.removeClass("icon-close").addClass("icon-open");
 	}
 }
 
@@ -70,14 +68,6 @@ $(function(){
    if(isPC()){
    $(window).scroll(function () {
 
-   				if( $(window).scrollTop() == 0){
-   					console.log(111);
-   				}else{
-   					console.log(222);
-   				}
-
-
-
    				//获取 toc 容器 到 document 的 距离
                 var a = $(".toc-container").offset().top;      
                           
@@ -113,14 +103,6 @@ function fixlayout( $obj){
 // 清空之前的绝对布局
 function removelayout( $obj ){	
 	$obj.removeClass('toc-fixed');
-}
-
-
-// 浏览器跳转到 指定id的元素
-function scrollToId(id) {  
-
-  $("html,body").animate({
-  		scrollTop:$("#" + id).offset().top}, 400);   
 }
 
 

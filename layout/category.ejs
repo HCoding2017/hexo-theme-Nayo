@@ -5,28 +5,34 @@
   <% if( is_category()){ %>
 
   	<% title = page.category %>
-  	<h3><%= title %></h3>		
+  	<h3 class="title"><%= title %></h3>		
   	
 	 <% page.posts.each(function (post) { %>    	
     <%- partial('_partial/article',{ post:post}) %> 
-	<% }) %>
+	 <% }) %>
 
   	%>
 
   <%} else {%>	  
 
   <% title = __('Page.Categories')%>
-  <h3><%= title %></h3>	
+  <h3 class="title"><%= title %></h3>	
 
     <% site.categories.forEach( function ( category ){%>
     <div class="category-item">
-      <a class="category-name iconfont icon-detail " href="<%- url_for(category.path)%>"> <%- category.name %> </a>
+      <span class=" iconfont icon-detail "></span>
+      <a class="category-name" href="<%- url_for(category.path)%>"> <%- category.name %> </a>
 
       <ul class="category-posts">
-          <% category.posts.each(function (post){ %>
-              <li class="iconfont icon-article">
-              <a href="<%- url_for(post.path) %>"><%= post.title || __('Untitled') %> </a> 
+          <% category.posts.each(function (post){ %>      
+              <li class="category-post-title">
+
+              <time ><%= date(post.date, "YYYY/MM/DD") %></time>    
+
+              <a href="<%- url_for(post.path) %>"><%= post.title || __('Untitled') %> </a>                
+
               </li>
+
           <% }) %>  
       </ul>
    </div>

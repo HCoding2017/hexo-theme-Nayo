@@ -1,16 +1,11 @@
 
-</script>
-
-
 
 <div class="article-top">
-    <div class="article-top-title">
-       <a href="<%- url_for(post.path) %>"><%= post.title || __('Untitled')%></a>         
-     </div>
-
     
+     <a class="article-top-title"  href="<%- url_for(post.path) %>"><%= post.title || __('Untitled')%></a>         
+     
 
-	 <span class="article-top-date"><%= date(post.date, "YYYY-MM-DD") %></span>       
+	 <time class="article-top-date"><%= date(post.date, "YYYY-MM-DD") %></time>       
 
 </div>
 

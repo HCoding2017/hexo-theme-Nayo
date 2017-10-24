@@ -18,8 +18,6 @@
 
 
 
-
-
  
   <% if (theme.favicon){ %>
     <link rel="icon" href="<%- theme.favicon %>">
@@ -35,9 +33,10 @@
   <!-- Add fancyBox -->
   <%- css('https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.css') %>
   <%- js('https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.js') %> 
-  <%- js('js/pic') %>
 
 
+  <%- js('js/utils.js') %> 
+  <%- js('js/pic.js') %>
   <%- js('js/script.js') %> 
 
 </head>
