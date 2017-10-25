@@ -41,9 +41,10 @@
 	margin 0.8em 0
 	overflow hidden
 	padding 0.1em
+	font-size 16px
 	&:hover
-		background $item-hover-clr
-		color $hover-clr
+		background $black
+		color $white
 	
 
 //categories
@@ -54,13 +55,17 @@
 	margin 0.1em 0.2em
 	padding 0.2em
 	overflow hidden
-	&:hover
-		background $item-hover-clr
-		color $hover-clr
-		
-		
+	font-size 16px		
+.categories-item a	
+	&:hover		
+		color $hover-clr	
+		padding-left .2em
 .categories-count
-	border-bottom 1px solid #848484
+	border 1px solid #848484
+	border-radius 4px
+	padding .2em
+	&:hover		
+		color $hover-clr	
 	
 	
 
@@ -79,6 +84,7 @@
 .link-item
 	font-size 1rem
 	border-radius 10px
+	
 .link-item a	
 	&:hover
 		color $hover-clr

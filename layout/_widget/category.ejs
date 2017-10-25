@@ -3,7 +3,7 @@
     <a href="<%- url_for(theme.menu.categories) %>"><h3 class="widget-title"><%= __('Sidebar.Categories') %></h3></a>
  	
 
-      <% site.categories.sort('date',-1).each (function (category){%>
+      <% site.categories.sort('length',-1).each (function (category){%>
       	
       	<div class="categories-item">
 

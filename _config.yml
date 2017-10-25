@@ -29,7 +29,7 @@ profile:
   author: Synch
   city: GuangZhou
   country: China
-  descrption:  I just wanna be part of your symphony
+  descrption: If I walk would you run.If I stop would you come.
 
 # put icon in theme/source/img
 favicon: /img/favicon.png
@@ -40,15 +40,15 @@ recent_posts:
 
 #social link
 social:  
-  github: https://github.com/Lemonreds
-#  zhihu:
-#  weibo:
+  github: https://github.com/Lemonreds  
+  zhihu:
+  weibo:
   segmentfault: 
   facebook:
   twitter:
   instagram:
   linkedin:
-#  others:
+  others:
 
 #your friend link
 link:
