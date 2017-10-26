@@ -4,17 +4,25 @@
 
   <body> 
   	<%- partial('_partial/header', null, {cache: !config.relative_link}) %> 
+
   
-     <div class="container">  
-      <% if( is_post() || is_current('about')){ %>
-          <%- body %>              
-      <%}else{%>     
-          <section id="main"><%- body %></section>
-          <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %> 
-          <% } %>  
+     <div class="container">
+      
+          <section id="main"><%- body %></section> 
+
+
+     <% if( !( is_post() || is_current('about')) ){ %>                
+
+        <% if( theme.sidebar){%>
+        <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>       
+        <% }%>  
+
+    <% } %>
+
     </div>        
 
-    <div class="back-to-top iconfont icon-backtotop fadeIn"></div>    
+
+    <div class="back-to-top iconfont icon-backtotop fadeIn"></div>      
 
     <%- partial('_partial/footer') %> 
     <%- partial('_partial/after-footer') %> 

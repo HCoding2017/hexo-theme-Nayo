@@ -1,16 +1,16 @@
 
-var logo ;
-var logoTitle ;
+var logo;
+var logoTitle;
 
 //post页面标题跟踪
 $(function(){
 
-	//初始化
-	 logo = $('.header-logo');
-	 logoTitle =  $('.header-logo a').text();
+	if(isPC()){//移动端不使用
 
-	//移动端不使用
-	if(isPC()){  
+	  //初始化
+	 logo = $('.header-logo');
+	 logoTitle =  $('.header-logo').text();
+
 
 	$(window).scroll(function() {
 
@@ -22,8 +22,9 @@ $(function(){
 			//还原logo
 			setLogo();
 		}
-
 	})
+
+
 	}
 })
 
@@ -35,7 +36,7 @@ function setTitle(){
 
 	postTitle = cutString(postTitle , 40);
 
-	$('.header-logo a').text(postTitle);
+	$('.header-logo').text(postTitle);
 
 	logo.removeClass('header-logo');
 }
@@ -43,7 +44,6 @@ function setTitle(){
 function setLogo(){
 
 	logo.addClass('header-logo');
-	$('.header-logo a').text(logoTitle);	
+	$('.header-logo').text(logoTitle);	
 
 }
-

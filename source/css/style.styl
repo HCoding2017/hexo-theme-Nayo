@@ -20,24 +20,24 @@ html,body
   margin 0 
   padding 0
   font $font-size $font
-  font-weight  $font-weight 
    
 h1
-    font-size 1.4em
+    font-size 1.6em
     font-weight $font-blod 
 h2  
-    font-size 1.2em
-    font-weight $font-normal 
+    font-size 1.5em
+    font-weight $font-blod 
 h3
-    font-size 1.1em
-    font-weight $font-normal 
+    font-size 1.2em
+    font-weight  $font-blod 
 h4
-    font-size 1em
-    font-weight $font-normal 
-h5,h6
     font-size .9em
-    font-weight $font-normal 
-    
+    font-weight $font-blod 
+h5,h6
+    font-size .7em
+    font-weight $font-blod  
+
+
 .ul,.li
   margin 0
   padding 0.2em
@@ -80,14 +80,14 @@ time
 fullscreen = hexo-config("fullscreen")
 .container  
   margin 0 auto
-  margin-top 2em 
-  @media mq-normal
-    position: relative;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
+  margin-top 2em
+  @media mq-normal  
+    position: relative  
+    top: 0
+    left: 0
+    display: flex
+    align-items: flex-start
+    justify-content: center
 
 if  fullscreen is true
   .container
@@ -130,7 +130,7 @@ else
 #container 
   @media mq-normal     
     column(container-column)  
-   
+
 #main    
   @media mq-normal
     column(main-column)  
@@ -143,32 +143,32 @@ else
   @media mq-tablet 
     column(sidebar-column)
     
-#post
-  position relative
-  width 70%  
+
 #post  
-   @media mq-tablet 
-    width 90%  
+  position relative
+  width 100%  
   
   
 sidebar = hexo-config("sidebar")
 
-if sidebar is right
+if sidebar is false
   #main
-    @media mq-normal
-      float left
-else
+        width 70%
   #main
-    @media mq-normal
-      float right
+      @media mq-tablet 
+         width 100%
+  #post     
+        width 90% 
+ 
 
 
+  
 toc = hexo-config("toc")
 
 if toc is false
-    .toc
-      display none
-      
+  .toc
+     display none
+     
 .toc       
     @media mq-tablet 
       display none

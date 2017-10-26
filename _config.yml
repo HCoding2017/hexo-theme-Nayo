@@ -5,23 +5,11 @@ menu:
   categories: categories  
   tags: tags
   about: about
-  
-# left or right 
-# i like right...
-sidebar: right
 
-# sidebar widgets
-widgets:
-- profile
-- recent
-- category
-- tagcloud
-- link
-
-# site
+#site title
 title: Synch
 
-#you info
+#your profile
 profile: 
 # put avatar in theme/source/img
   logo: Nayo
@@ -34,9 +22,21 @@ profile:
 # put icon in theme/source/img
 favicon: /img/favicon.png
 
+#show/hide sidebar [true or false] 
+sidebar: 
+    false
+  
+# sidebar widgets
+widgets:
+- profile
+- recent
+- category
+- tagcloud
+- link
+
 #recent_posts number
 recent_posts:
-  count: 8
+  count: 6
 
 #social link
 social:  
@@ -52,17 +52,18 @@ social:
 
 #your friend link
 link:
-  colorhexa: //www.colorhexa.com
-  google: //www.google.com
-  synch: //synch.site
+  ColorHexa: //www.colorhexa.com
+  Google: //www.google.com
+  Synch: //synch.site
 # linkd: 
 # linke:
+
 
 # toc of post  [true or false]  
 toc:
     true
 
-# is fullscreen [ 100%width show the page or less]
+# is fullscreen [ more width or less]
 fullscreen:
     false
 

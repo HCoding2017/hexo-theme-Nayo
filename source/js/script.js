@@ -36,10 +36,11 @@ $(function(){
 
  		clicked_menu = $('#header-menu-home');
  	}
- 	// set clicked menu underline
- 	var border = "border-bottom";
- 	var border_type = "2px solid #0088cc";
- 	clicked_menu.css(border,border_type);
+ 	// set clicked menu underline and color 	
+ 	clicked_menu.css({
+        'border-bottom':'2px solid #0088cc',
+        'color':'#0088cc'
+    });
 
 });  
 
