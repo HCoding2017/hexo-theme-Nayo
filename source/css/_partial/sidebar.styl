@@ -1,12 +1,23 @@
+
+// #sidebar
+// 	border-left 1px solid $line-clr
+
 .widget 
 	@extend $block	
 	text-align center
 	padding-bottom 1em
 	overflow hidden 
 .widget-title
+	width auto
+	display block	
+	font-size 1.1em
+	padding-bottom .5em
+	margin-bottom 1em
+	border-bottom 1px solid $line-clr
 	color $gray
 	&:hover
 		color $hover-clr 	
+		border-bottom 1px solid $hover-clr 
 
 //pofile
 #personal-card	
@@ -44,8 +55,7 @@
 	padding 0.1em
 	font-size 16px
 	&:hover
-		background $black
-		color $white
+		color $hover-clr
 	
 
 //categories
@@ -83,7 +93,7 @@
 		
 //link
 .link-item
-	font-size 1rem
+	font-size .8rem
 	border-radius 10px
 	
 .link-item a	

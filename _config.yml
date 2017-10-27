@@ -24,7 +24,7 @@ favicon: /img/favicon.png
 
 #show/hide sidebar [true or false] 
 sidebar: 
-    false
+    true
   
 # sidebar widgets
 widgets:

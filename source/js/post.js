@@ -24,7 +24,6 @@ $(function(){
 		}
 	})
 
-
 	}
 })
 
@@ -34,16 +33,13 @@ function setTitle(){
 	//获取post标题
 	var postTitle = $('.post-title h1').text();
 
-	postTitle = cutString(postTitle , 40);
+	postTitle = cutString(postTitle , 38);
 
-	$('.header-logo').text(postTitle);
-
-	logo.removeClass('header-logo');
+	$('.header-logo').text(postTitle);	
 }
 //还原logo
 function setLogo(){
-
-	logo.addClass('header-logo');
+	
 	$('.header-logo').text(logoTitle);	
 
 }

@@ -1,36 +1,41 @@
 //article
 .article-card
   @extend $block 
+  padding 1em 0
+  padding-top 0
+  margin-bottom 5em
   overflow hidden  
  
 .article-top 
   margin 0 auto
-  padding 10px 20px
-  height 40px
+  padding 20px 20px
   border-left 1.8px solid $gray
-  border-bottom .8px solid $line-clr 
-  margin-bottom .4em
+  border-bottom .9px solid $line-clr 
+  margin-bottom .6em
   display -webkit-flex
   display flex
   justify-content space-between
-  overflow hidden
   &:hover
     border-left 3px solid $hover-clr
     color $hover-clr    
     
-.article-top-title    
+.article-top-title     
     width auto
-    max-width 85%
-    font-size 1.2em  
+    max-width 89%
+    font-size 1.4em  
     font-family  $post-title-font 
     font-weight $font-blod 
-    
+    &:visited,&:active
+      color $black 
+    &:hover
+      color $hover-clr
 
 .article-content
-    padding 3px  
+    padding .3em
     height 100%  
-    font-size 14px
-    font-style italic
+    font-size 15px
+    line-height 1.6
+    text-align justify
     &:hover
       color $hover-clr
       
@@ -51,13 +56,13 @@
 
 .gallery-box
     display inline-block
-    width 170px
+    width 175px
     height auto    
 .gallery-brg    
     @extend $img_radius 
     display block
-    width 170px
-    height 170px
+    width 175px
+    height 175px
     overflow hidden
     background-size cover
     background-position center

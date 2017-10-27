@@ -10,6 +10,8 @@ $(function(){
 })
 
 
+
+
 // set clicked menu underline
  $(function(){  
    // get the url
@@ -46,10 +48,14 @@ $(function(){
 
 
 
+
+
 var last_scroll = 0;
 // windos scroll function
  $(function() {
             
+
+    if(isPC()){
 
     $(window).scroll(function() {
     //silde down
@@ -69,8 +75,7 @@ var last_scroll = 0;
     last_scroll = $(window).scrollTop();
 
 
-    //back to top
-   
+    //back to top  
 
        if ($(window).scrollTop() > 800 ){
             $('.back-to-top').show();
@@ -85,11 +90,12 @@ var last_scroll = 0;
             $('html,body').animate({scrollTop: 0}, 1000);     
             $(window).scrollTop() = 0;
         });
+       });
 
-
+    }
  });
 
-});
+
 
 
 function showHeader(){

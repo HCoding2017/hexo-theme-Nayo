@@ -46,22 +46,27 @@ h5,h6
   
 
 .page-title
+   display block
+   font-size 1.2em
    font-family $page-title-font 
    font-weight $font-blod
+   margin-bottom 2.6em
    opacity 0.5
    line-height 10px  
    letter-spacing .5px
-  
-
+   
 
 a
- text-decoration none  
+ text-decoration none 
+
  &:hover
    color $hover-clr 
  &:link
-   color gray
+   color $black
  &:visited
-   color gray
+   color $black
+ &:active 
+   color $black
 
 img
   @extend $img_radius 
@@ -156,7 +161,7 @@ if sidebar is false
         width 70%
   #main
       @media mq-tablet 
-         width 100%
+        width 100%
   #post     
         width 90% 
  

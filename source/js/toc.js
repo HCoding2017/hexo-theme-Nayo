@@ -19,6 +19,13 @@ $(function(){
 	//获取第一级目录	
 	var $level  =  $('h1');	
 
+	//如果是空的话 隐藏toc容器
+	if($level.length == 0){
+		$('.toc-container').hide();
+		return ;
+	}
+
+
 	$level.each(function( i ) {		
 		//第一级目录添加id
 		var id = "content-item"+i;
@@ -44,15 +51,12 @@ $(function(){
 				var sub_html = $holder.text();
 				var sub_li = "<li id=\"toc-subitem-"+ i +j + "\" class =\"toc-subitem\">" + sub_html + " </li>" ;
 				$toc.append(sub_li);
-
 				//绑定第二级点击跳转事件				
 				$('#toc-subitem-'+i+j).click(function(){			
 					scrollToId(sub_id);
 				});
-			}
-		
+			}		
 		})	
-
 		//绑定第一级点击跳转事件
 		$('#toc-item-'+i).click(function(){
 			scrollToId(id);

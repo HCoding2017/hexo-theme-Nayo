@@ -1,11 +1,11 @@
-<section class="block slideLIn">
+<section class="block fadeIn">
 
   <% var title %>
 
   <% if( is_category()){ %>
 
   	<% title = page.category %>
-  	<h3 class="page-title"><%= title %></h3>		
+  	<span class="page-title"><%= title %></span>		
   	
 	 <% page.posts.each(function (post) { %>    	
     <%- partial('_partial/article',{ post:post}) %> 
@@ -16,7 +16,7 @@
   <%} else {%>	  
 
   <% title = __('Page.Categories')%>
-  <h3 class="page-title"><%= title %></h3>	
+  <span class="page-title"><%= title %></span>	
 
     <% site.categories.forEach( function ( category ){%>
     <div class="category-item slideLIn">

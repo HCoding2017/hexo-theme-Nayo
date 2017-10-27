@@ -1,22 +1,8 @@
----
-title: README
-date: 2017-10-26 22:16:43
-tags: 
-- Nayo
-categories: 
-- 测试
----
-#### This post will help you to install Nayo themes and configure. 
-#### 这篇文章将帮助你安装nayo和了解更多的信息。
-
-<!--more-->
 # hexo-theme-Nayo
 
-### A clean theme for [Hexo](https://hexo.io).
+### A clean/white theme for Hexo.
 
 ### Demo preview  : [在线预览:synch](http://synch.site)
-
-
 
 ***
 # Installation 主题安装
@@ -155,15 +141,15 @@ layout: about
 # Other 其他
 
 如果有其他的问题或者建议 Contact me 
-如果你能点个star的话 就非常的可爱和谢谢啦 :)
 
 ## 关于主题名字
+
 在制作主题的时候刚好听到的一首歌里面的歌词.<东京不太热> - 封茗囧菌
 
 ## Email 
 lemonreds@163.com
 
 ## QQ 
-792277840
 
-Have a nice day ! Created by SYNCH .
+792277840
+Have a nice day ! Created by SYNCH.

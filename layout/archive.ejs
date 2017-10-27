@@ -1,5 +1,5 @@
-<section class="block slideLIn">
-  <h3  class="page-title"><%= __('Page.Archives') %></h3>  	    
+<section class="block fadeIn">
+  <span  class="page-title"><%= __('Page.Archives') %></span>  	    
    
     <% var last%> 
     <% page.posts.each(function (post) { %>
@@ -19,7 +19,7 @@
          <%= date(post.date, "MM-DD") %>
         </span>   
 
-        <% var title = truncate(post.title, {length:84}) %>
+        <% var title = truncate(post.title, {length:75}) %>
         <a class="left archive-title" href="<%- url_for(post.path) %>"><%= title || __('Untitled')%></a>
       </div>
 

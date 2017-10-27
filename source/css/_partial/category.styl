@@ -2,7 +2,9 @@
 .category-item	
 	overflow hidden
 	margin 2em
-	border-left 1.5px solid $blue	
+	&:before
+		content "#"
+		color $gray
 .category-name
 	padding-left .8em
 	letter-spacing 1px
@@ -20,5 +22,6 @@
 	&:hover		
 		color $blue
 .category-post-title a
+	margin-left 1em
 	&:hover	
 		color $blue
