@@ -21,6 +21,12 @@ theme: Nayo
 ***
 
 # Configuration 主题配置
+### yourblog/_config.yml
+
+## Language
+```
+language: en/zh-CN/zh-TW
+```
 
 ### Nayo/_config.yml
 
@@ -119,28 +125,37 @@ google_analytics:
 ```
 ***
 # Content 主题内容
+## Categories
+```
+# cd yourblog
+# hexo new page categories
+```
+
+## Tags
+```
+# cd yourblog
+# hexo new page tags
+```
 
 ## About
 ```
 # cd yourblog
 # hexo new page about
-
-# Modify layout in yourblog/source/about/index.md
 ```
 such:
-
 ```
 ---
 title: about
 date: 2017-10-26 22:19:49
 layout: about
 ---
-//your content here
+//your detial content here
 ```
 ***
 # Other 其他
 
 如果有其他的问题或者建议 Contact me 
+欢迎star和提issue!
 
 ## 关于主题名字
 

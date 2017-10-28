@@ -31,7 +31,7 @@ $(function(){
 function setTitle(){
 
 	//获取post标题
-	var postTitle = $('.post-title h1').text();
+	var postTitle = $('.post-title').text();
 
 	postTitle = cutString(postTitle , 38);
 

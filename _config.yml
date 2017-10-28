@@ -34,7 +34,7 @@ widgets:
 - tagcloud
 - link
 
-#recent_posts number
+#recent_posts count
 recent_posts:
   count: 6
 
@@ -50,7 +50,7 @@ social:
   linkedin:
   others:
 
-#your friend link
+#your friends link
 link:
   ColorHexa: //www.colorhexa.com
   Google: //www.google.com
@@ -67,8 +67,8 @@ toc:
 fullscreen:
     false
 
-# only normal | todo
 # code style
+# only normal | todo
 highlight_theme: 
     normal
 

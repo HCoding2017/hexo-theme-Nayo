@@ -27,9 +27,14 @@ $(function(){
 
 
 	$level.each(function( i ) {		
+
 		//第一级目录添加id
 		var id = "content-item"+i;
 		$(this).attr("id",id);
+
+		//第一级目录添加标记class 用于toc的follow
+		$(this).addClass("itemFollow");
+
 
 		//添加第一级目录	
 		var html = $(this).text();
@@ -47,6 +52,9 @@ $(function(){
 				//添加第二级目录的id
 				var sub_id = "content-subitem" + i + j ;
 				$(this).attr("id",sub_id);
+				//第二级目录添加标记class 用于toc的follow
+				$(this).addClass("itemSubFollow");
+
 				//创建html语句						
 				var sub_html = $holder.text();
 				var sub_li = "<li id=\"toc-subitem-"+ i +j + "\" class =\"toc-subitem\">" + sub_html + " </li>" ;
@@ -60,45 +68,66 @@ $(function(){
 		//绑定第一级点击跳转事件
 		$('#toc-item-'+i).click(function(){
 			scrollToId(id);
-		})
+		})		
 	})
 
 })
 
 
-//toc 被隐藏时候 固定布局
+//滑动 固定Toc
 $(function(){
 
    if(isPC()){
+
    $(window).scroll(function () {
 
-   				//获取 toc 容器 到 document 的 距离
-                var a = $(".toc-container").offset().top;      
-                          
-                if ( a < $(window).scrollTop()) {
-                    fixlayout($(".toc-container"));                    
-                }
-            		
-            	if($(window).scrollTop() < 90){
-               		removelayout($(".toc-container"));
-				}                
 
-				//判断滚动条是否到底部 是的话则隐藏toc
-				var document_h = $(document).height(); //整个文档的高度
 
-				var scrollTop_h =$(window).scrollTop(); //滚动条距离最上部分的长度
+   				if( $(window).scrollTop() <= 10 ){
+   					resetTocFollow();
+   				}else{
 
-				var hide_h = $(window).height(); //上方被隐藏的文档的高度
+   					openTocFollow();
+   				}
 
-				if(document_h -( hide_h + scrollTop_h) <= 40 ){
-					//'已经到了底部'				
-					removelayout($(".toc-container"));
-				}
 
-            });
+
+   				tocPosition();
+
+
+   			
+
+        });
    }
 })
 
+
+function tocPosition(){
+
+		//获取 toc 容器 到 document 的 距离
+        var a = $(".toc-container").offset().top;      
+                          
+        if ( a < $(window).scrollTop()) {
+            fixlayout($(".toc-container"));                    
+        }
+          		
+        if($(window).scrollTop() < 90){
+          	removelayout($(".toc-container"));
+		}                
+
+		//判断滚动条是否到底部 是的话则隐藏toc
+		var document_h = $(document).height(); //整个文档的高度
+
+		var scrollTop_h =$(window).scrollTop(); //滚动条距离最上部分的长度
+
+		var hide_h = $(window).height(); //上方被隐藏的文档的高度
+
+		if(document_h -( hide_h + scrollTop_h) <= 40 ){
+		//'已经到了底部'				
+		removelayout($(".toc-container"));
+		}
+
+}
 
 // 更换到绝对布局
 function fixlayout( $obj){	
@@ -109,4 +138,77 @@ function removelayout( $obj ){
 	$obj.removeClass('toc-fixed');
 }
 
+//开启所有的Toc跟踪
+function openTocFollow(){
+	$('.itemFollow').each(function(i){
+   				if(	getOffsetTop( $(this) ) <= 40){   							
+   							var text = $(this).text();
+   							itemHighLigth( text );
+   						}   					
+   				})
 
+   				$('.itemSubFollow').each(function(j){
+   				if(	getOffsetTop( $(this) ) <= 60){   							
+   							var text = $(this).text();
+   							subItemHighLigth( text );
+   						}   					
+   				})
+}
+//清除所有的Toc跟踪
+function resetTocFollow(){
+	 $('.toc-item').each(function (i){
+	 	
+	 	if($(this).hasClass('toc-active')){
+	 		$(this).removeClass('toc-active');	 	 	
+	 	}	
+	 })
+	 $('.toc-subitem').each(function (i){	 
+	 	 
+	 	if($(this).hasClass('toc-sub-active')){
+	 		$(this).removeClass('toc-sub-active');	 	 	
+	 	}	
+	 })
+
+}
+
+
+
+//toc 大标题的高亮
+function itemHighLigth( text ){
+
+	 $('.toc-item').each(function (i){
+	 	
+	 	if($(this).hasClass('toc-active')){
+	 		$(this).removeClass('toc-active');	 	 	
+	 	}	
+	 	//增加新的item
+	 	if($(this).text().trim() == text){
+	 		$(this).addClass('toc-active');	 		
+	 	}	 	
+	 })
+
+}
+//toc 小标题的高亮
+function subItemHighLigth( text ){
+	$('.toc-subitem').each(function (i){	 	
+
+	 	 
+	 	if($(this).hasClass('toc-sub-active')){
+	 		$(this).removeClass('toc-sub-active');	 	 	
+	 	}	
+	 	//增加新的item
+	 	if($(this).text().trim() == text){	 	
+	 		$(this).addClass('toc-sub-active');	 		
+	 	}	 	
+	 })
+}
+
+
+
+// 获取元素到浏览器顶部的距离
+function  getOffsetTop( $obj ){
+    var mTop = $obj.offset().top; 
+    var sTop = $(window).scrollTop();
+    var result = mTop - sTop;   
+    return result;  
+}

@@ -1,4 +1,4 @@
-//fancybox
+// init fancybox
 $(function(){
         $('img').each(function() {      
         $(this).attr({

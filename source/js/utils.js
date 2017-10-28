@@ -1,6 +1,4 @@
 
-
-
 function isPC(){  
     var userAgentInfo = navigator.userAgent;  
     var Agents = new Array("Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod");  
@@ -25,6 +23,6 @@ function cutString( str ,maxlength ){
 function scrollToId(id) {  
 
   $("html,body").animate({
-  		scrollTop:$("#" + id).offset().top}, 400);   
+  		scrollTop:$("#" + id).offset().top }, 400);   
 }
 

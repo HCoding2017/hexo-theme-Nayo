@@ -1,60 +1,63 @@
-
 .toc{	
 	color  gray 
-	overflow hddien
+	overflow hidden
 	position absolute
     top 0%
     left 87% 
     width 28%
 }
-
-.toc-container{	
+.toc-container
 	margin auto 0
-	height 100%	
- 	width  auto  
-}
-.contents{	
+	height 100%	  
+	width auto
+.contents
 	display block
 	padding .2em
-	font-size:1.1em	
-	cursor:pointer
-}
-
-.toc-list{
-   list-style-type none
-   display inline-block
-   margin-top 1em 
-   margin-left 0
-   padding 0
-}
-.toc-item {	
+	font-size 1.1em	
+	cursor pointer
+.toc-list
+    list-style-type none	
+  
+.toc-item 
 	display block	
 	font-size 1em
 	font-weight $font-normal
-	margin .2em 0
+	margin 0
+	padding 0
 	letter-spacing  1px
-}
-.toc-item:hover{
-	cursor pointer
-	color $hover-clr
-	margin-left .3em
-}
+	
+.toc-item 
+	&:hover
+		 cursor pointer
+		 color $hover-clr
+		 margin-left .3em
 
-.toc-subitem {
+
+.toc-subitem 
 	display block
 	font-size .9em	
 	color $gray
 	margin-left 0.6em
 	font-weight $font-normal
-}
-.toc-subitem:hover{
-	cursor pointer
-	color  $hover-clr
-	margin-left 0.8em
-}
+
+.toc-subitem
+	&:hover
+		cursor pointer
+		color  $hover-clr
+		margin-left 0.8em
 
 
-.toc-fixed{
+//script CSS
+.toc-fixed
 	position fixed 
 	top 0 
-}
+.toc-active
+	color $hover-clr
+	&:before
+		content "#"
+		font-size 1.2em
+.toc-sub-active
+	color $hover-clr
+	&:before
+		content "#"
+		font-size 1.2em
