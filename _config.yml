@@ -17,7 +17,7 @@ profile:
   author: Synch
   city: GuangZhou
   country: China
-  descrption: If I walk would you run.If I stop would you come.
+  descrption: Okay guys ,class is over
 
 # put icon in theme/source/img
 favicon: /img/favicon.png
@@ -74,5 +74,15 @@ highlight_theme:
 
 # website analytics [your analytics id]
 baidu_analytics:
-  636802045446222199ae541e32c8133e
+  636802045446222199ae541e32c8133e 
 google_analytics: 
+
+# busuanzi site count
+busuanzi:
+  true
+
+# leancloud post count
+leancloud:
+  enable: true
+  app_id: 
+  app_key: 

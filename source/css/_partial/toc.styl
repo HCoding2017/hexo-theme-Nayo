@@ -12,6 +12,7 @@
 	width auto
 .contents
 	display block
+	color $black
 	padding .2em
 	font-size 1.1em	
 	cursor pointer
@@ -22,6 +23,7 @@
 	display block	
 	font-size 1em
 	font-weight $font-normal
+	color $black
 	margin 0
 	padding 0
 	letter-spacing  1px
@@ -31,12 +33,11 @@
 		 cursor pointer
 		 color $hover-clr
 		 margin-left .3em
-
-
+		 
 .toc-subitem 
 	display block
 	font-size .9em	
-	color $gray
+	opacity .7
 	margin-left 0.6em
 	font-weight $font-normal
 
@@ -46,7 +47,6 @@
 		color  $hover-clr
 		margin-left 0.8em
 
-
 //script CSS
 .toc-fixed
 	position fixed 
@@ -55,9 +55,10 @@
 	color $hover-clr
 	&:before
 		content "#"
-		font-size 1.2em
+		font-size 1.3em
+
 .toc-sub-active
 	color $hover-clr
 	&:before
 		content "#"
-		font-size 1.2em
+		font-size 1.3em

@@ -7,12 +7,21 @@
 </span>
 
 
-<div class="post-time iconfont icon-date">
+<div class="post-info">
 	<time>
-    <%- date(page.date, "YYYY/MM/DD HH:mm:ss")%> 
+	<span class="iconfont icon-date"></span>
+    <%- date(page.date, "YYYY/MM/DD HH:mm:ss")%> 	
 	</time>
-</div>
 
+
+	<% if(theme.leancloud.enable && theme.leancloud.app_id && theme.leancloud.app_key ) {%>
+	<span class="post-visitor">
+		<span class="iconfont icon-eye"></span>
+		<span class="post-count" id="post-leancloud-count"></span>
+	</span>
+	<%}%>
+
+</div>
 
 </div>
 

@@ -4,14 +4,16 @@
 
 .archive-year
 	font-size 1.2em
-	font-family 'Optima'
+	font-family $year-font
 	clear both
+	margin 1.5em 0
 	opacity 0.85
-	line-weight 1.9
+	line-weight 2
 	letter-spacing 2px
 	
 .archive-item
 	font-size 1em
+	font-family $archive-font
 	clear both
 	overflow hidden
 	margin 1em 1.8em
@@ -20,11 +22,14 @@
 		color $hover-clr	
 
 .archive-date
+	font-family $archive-font
+	color gray
 	font-size 1.0em
-	opacity 0.5
-	
+	opacity 0.9
+	&:hover		
+		color $hover-clr
 .archive-title
-	margin-left 1.2em
+	margin-left 1em
 	font-size 1.0em	
 	&:hover		
 		color $hover-clr

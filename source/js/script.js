@@ -68,10 +68,10 @@ function slideHeader(){
 function initBackToTop(){
     //back to top  
     if ($(window).scrollTop() > 800 ){
-            $('.back-to-top').show();
+            $('.back-to-top').addClass('slideRIn').show();
         }
     else{
-            $('.back-to-top').hide();
+            $('.back-to-top').removeClass('slideRIn').hide();
         }
   
     $('.back-to-top').click(function() {
