@@ -62,7 +62,7 @@ favicon: /img/favicon.png
 ```
 #show/hide sidebar [true or false] 
 sidebar: 
-    false
+    true
   
 # sidebar widgets
 widgets:
@@ -117,6 +117,7 @@ highlight_theme:
 ```
 
 ## Analytics
+站点统计
 ```
 #Website analytics [your analytics id]
 baidu_analytics:
@@ -124,7 +125,7 @@ baidu_analytics:
 google_analytics: 
 ```
 ## 不蒜子
-
+footer的访客记录
 直接在配置文件中启用即可
 ```
 #busuanzi site count
@@ -133,7 +134,7 @@ busuanzi:
 ```
 
 ## LeanCloud
-
+文章的浏览记录
 1.注册一个 [LeanCloud](https://leancloud.cn/) 账户 创建一个新的应用(名称任意)
 2.创建新的Class名称为'Counter'
 3.在Counter里面新增以下列
@@ -149,6 +150,15 @@ leancloud:
   app_id: your_appid
   app_key: your_appkey
 ```
+## Mob Share
+在[Mob](http://dashboard.mob.com/)注册一个你的账号 新建一个ShareSDK获取WebShare的AppKey
+也可以不填入app_key 不统计分享信息
+```
+mob_share:
+  enable: true
+  app_key: your_appkey
+```
+
 
 
 # Content 主题内容

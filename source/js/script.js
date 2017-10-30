@@ -34,16 +34,15 @@
 // windows scroll function
  $(function() {            
 
-    if(isPC()){
 
     $(window).scroll(function() {
 
+        if(isPC()){
         slideHeader();  
-
+        }
         initBackToTop();
 
-    });
-    }
+    });    
  });
 
 var last_scroll = 0;

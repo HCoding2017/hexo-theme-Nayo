@@ -8,4 +8,3 @@ $(function(){
 		$(this).next('ul').show();		
 	})
 })
-

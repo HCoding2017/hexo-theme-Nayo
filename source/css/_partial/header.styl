@@ -24,6 +24,7 @@
       color $black
     &:hover
       color $hover-clr
+      border-bottom 2px solid $hover-clr
      
 .header-menu
     height 100%
@@ -46,10 +47,10 @@
       &:hover
        color $hover-clr    
       &:hover::before 
-        content "\5b"
+        content "-"
         left -10px
       &:hover::after
-        content "\5d"
+        content "-"
         right -10px
 //script
 .header-static
@@ -64,6 +65,8 @@
   opacity 0.8
   background-color $white 
   transition .6   
-.header-menu-active
-   border-bottom:2px solid $hover-clr
-   color $hover-clr
+.header-menu-active  
+  border-bottom 2px solid $hover-clr
+  &:visited,&:active
+      color $hover-clr
+   

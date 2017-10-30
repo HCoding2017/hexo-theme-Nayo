@@ -14,12 +14,12 @@
       	<% last = year %>	                
 		    <%}%>
 
-      <div class="archive-item">   	
+      <div class="animation-item  archive-item">   	
         <span class="left archive-date">
          <%= date(post.date, "MM-DD") %>
         </span>   
 
-        <% var title = truncate(post.title, {length:75}) %>
+        <% var title = truncate(post.title, {length:76}) %>
         <a class="left archive-title" href="<%- url_for(post.path) %>"><%= title || __('Untitled')%></a>
       </div>
 
@@ -27,3 +27,5 @@
 
 </section>
 <%- partial('_partial/paginator') %>
+
+<%- js('js/archive') %>

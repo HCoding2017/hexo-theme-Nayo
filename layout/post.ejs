@@ -1,6 +1,7 @@
 <% if(theme.leancloud.enable && theme.leancloud.app_id && theme.leancloud.app_key ) {%>
 
 <script src="//cdn1.lncld.net/static/js/3.3.0/av-min.js"></script>
+
 <script>
 var app_id = '<%- theme.leancloud.app_id %>';
 var app_key = '<%- theme.leancloud.app_key %>';
@@ -9,9 +10,9 @@ AV.init({
   appKey: app_key
 });
 </script>
+
 <%- js('js/leancloud') %>
 <% }%>
-
 
 <article id="post" class="post slideLIn">
 
@@ -33,6 +34,13 @@ AV.init({
   </div>  
  
 <%- partial('_partial/article/meta',{post: page}) %> 
+
+<% if(theme.mob_share.enable){%>
+<%- partial('_partial/post/mob_share') %> 
+
+<%}%>
+
+
 <%- partial('_partial/post/nav',{post: page}) %> 
 <%- partial('_partial/post/wdigets',{post: page}) %> 
 
@@ -47,3 +55,4 @@ AV.init({
 
 
 <%- js('js/post') %>
+

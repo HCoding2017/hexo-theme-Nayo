@@ -1,13 +1,9 @@
 
 @keyframes fadeIn
     from
-      opacity 0
-      -webkit-transform:translateY(-20px)  
-      transform:translateY(-20px) 
+      opacity 0     
     to 
-      opacity 1  
-      -webkit-transform:translateY(0)
-      transform:translateY(0) 
+      opacity 1       
   
 @-webkit-keyframes fadeIn
     from
@@ -35,7 +31,7 @@
 
 .fadeOut 
   -webkit-animation-name: fadeOut
-  -webkit-animation-duration 2s  
+  -webkit-animation-duration 1s  
   -webkit-animation-iteration-count 1 
   -webkit-animation-delay 0s
 
@@ -95,7 +91,6 @@
 }   
 
 
-
 .slideDown
   -webkit-animation-fill-mode: forwards
   -webkit-animation-name: slideDown
@@ -106,17 +101,17 @@
 
 @keyframes slideLIn{
     0%{
-    -webkit-transform:translateX(-60px)  
-    transform:translateX(-60px)       
+    -webkit-transform:translateX(-65px)  
+    transform:translateX(-65px)       
   }
     100%{
-    -webkit-transform:translateY(0)
-    transform:translateY(0)  
+    -webkit-transform:translateX(0)
+    transform:translateX(0)  
   }
 }
 @-webkit-keyframes slideLIn{
     0%{
-    -webkit-transform:translateX(-60px)    
+    -webkit-transform:translateX(-65px)    
   }
     100%{
     -webkit-transform:translateX(0)
@@ -132,17 +127,17 @@
 
 @keyframes slideRIn{
     0%{
-    -webkit-transform:translateX(60px)  
-    transform:translateX(60px)   
+    -webkit-transform:translateX(65px)  
+    transform:translateX(65px)   
   }
     100%{
-    -webkit-transform:translateY(0)
-    transform:translateY(0) 
+    -webkit-transform:translateX(0)
+    transform:translateX(0) 
   }
 }
 @-webkit-keyframes slideRIn{
     0%{
-    -webkit-transform:translateX(60px)    
+    -webkit-transform:translateX(65px)    
   }
     100%{
     -webkit-transform:translateX(0)
@@ -152,6 +147,63 @@
 
 .slideRIn 
   -webkit-animation-name: slideRIn
+  -webkit-animation-duration  .5s  
+  -webkit-animation-iteration-count 1 
+  -webkit-animation-delay 0s
+  
+
+
+
+@keyframes itemLIn{
+    0%{
+    -webkit-transform:translateX(0px)  
+    transform:translateX(0px)   
+  }
+    100%{
+    -webkit-transform:translateX(15px)
+    transform:translateX(15px) 
+  }
+}
+@-webkit-keyframes itemLIn{
+    0%{
+    -webkit-transform:translateX(0px)    
+  }
+    100%{
+    -webkit-transform:translateX(15px)
+  }
+}   
+
+.itemLIn 
+  -webkit-animation-fill-mode: forwards
+  -webkit-animation-name: itemLIn
+  -webkit-animation-duration  .5s  
+  -webkit-animation-iteration-count 1 
+  -webkit-animation-delay 0s
+  
+
+
+@keyframes itemRIn{
+    0%{
+    -webkit-transform:translateX(15px)  
+    transform:translateX(15px)   
+  }
+    100%{
+    -webkit-transform:translateX(0px)
+    transform:translateX(0px) 
+  }
+}
+@-webkit-keyframes itemRIn{
+    0%{
+    -webkit-transform:translateX(15px)    
+  }
+    100%{
+    -webkit-transform:translateX(0px)
+  }
+}   
+
+.itemRIn 
+  -webkit-animation-fill-mode: forwards
+  -webkit-animation-name: itemRIn
   -webkit-animation-duration  .5s  
   -webkit-animation-iteration-count 1 
   -webkit-animation-delay 0s

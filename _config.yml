@@ -13,11 +13,11 @@ title: Synch
 profile: 
 # put avatar in theme/source/img
   logo: Nayo
-  avatar: /img/header.jpg
+  avatar: /img/header.png
   author: Synch
   city: GuangZhou
   country: China
-  descrption: Okay guys ,class is over
+  descrption: simple is simple,love is love
 
 # put icon in theme/source/img
 favicon: /img/favicon.png
@@ -86,3 +86,8 @@ leancloud:
   enable: true
   app_id: 
   app_key: 
+
+#mob share
+mob_share:
+  enable: true
+  app_key:

@@ -3,7 +3,7 @@
      <% if (page.prev) { %>
       <div class="nav_prev">
         <a class="bottom-link" href="<%- url_for(page.prev.path) %>">  
-           <lil class="li iconfont icon-left"></li>         
+           <li class="li iconfont icon-left"></li>         
             <% var title = truncate(page.prev.title , {length:60}) %>  
           <span class="bottom-link-title"><%= title || '(no title)' %></span>
         </a>
