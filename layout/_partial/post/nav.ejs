@@ -1,7 +1,7 @@
 
  <nav class="bottom-nav">
      <% if (page.prev) { %>
-      <div class="nav_prev">
+      <div class="nav_prev animation-item">
         <a class="bottom-link" href="<%- url_for(page.prev.path) %>">  
            <li class="li iconfont icon-left"></li>         
             <% var title = truncate(page.prev.title , {length:60}) %>  
@@ -11,7 +11,7 @@
     <% } %>
 
     <% if (page.next) { %>
-       <div class="nav_next">      
+       <div class="nav_next animation-item-reverse">      
         <a  class="bottom-link" href="<%- url_for(page.next.path) %>">      
 
          <% var title = truncate(page.next.title, {length:60}) %>    

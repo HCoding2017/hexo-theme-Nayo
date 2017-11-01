@@ -8,7 +8,7 @@
 		</a>
 	</div>
 
-
+	
 
 	<div id="author-info">
 		
@@ -22,6 +22,13 @@
 		 <%- profile.country%>
 		 </span>	
 		<%}%>
+
+
+		<div class="social">
+   		<% for (i in theme.social) { %>    	
+		<a href="<%- url_for(theme.social[i]) %>" class="iconfont icon-<%-i%>" target="_blank" title="<%- i %>"></a>
+	    <% } %>
+    	</div>
 	</div>
 
 	
