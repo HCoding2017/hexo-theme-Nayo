@@ -1,58 +1,45 @@
-<% if(theme.leancloud.enable && theme.leancloud.app_id && theme.leancloud.app_key ) {%>
+<article class="post slideLIn">
 
-<script src="//cdn1.lncld.net/static/js/3.3.0/av-min.js"></script>
-
-<script>
-var app_id = '<%- theme.leancloud.app_id %>';
-var app_key = '<%- theme.leancloud.app_key %>';
-AV.init({
-  appId: app_id,
-  appKey: app_key
-});
-</script>
-
-<%- js('js/leancloud') %>
-<% }%>
-
-<article id="post" class="post slideLIn">
-
-<div class="post-content">
- 
 <%- partial('_partial/post/head',{post: page}) %> 
 
 
-  <div class="post-content">
-
+  <div class="post-text">
    <% if (page.photos && page.photos.length){ %>
         <% for( i in page.photos){%>
           <img src="<%- url_for(page.photos[i]) %>">             
         <%}%>
     <%}%>
-
-      <%- page.content %>    
-
+    <%- page.content %>    
   </div>  
  
 <%- partial('_partial/article/meta',{post: page}) %> 
 
 <% if(theme.mob_share.enable){%>
-<%- partial('_partial/post/mob_share') %> 
-
+<%- partial('_partial/post/mob_share') %>
 <%}%>
 
 
 <%- partial('_partial/post/nav',{post: page}) %> 
-<%- partial('_partial/post/wdigets',{post: page}) %> 
 
+<% if(theme.reward.enable){  %>
+<%- partial('_partial/post/reward') %> 
+<% } %>
+<% if(theme.leancloud.comment){  %>
+ <%- partial('_partial/post/comment') %>
+<% } %>
+
+
+<%# partial('_partial/post/wdigets',{post: page}) %> 
 </article>
 
 
 <% if(theme.toc){  %>
-
  <%- partial('_partial/post/toc',{post:page}) %>
-
 <% } %>
 
 
-<%- js('js/post') %>
 
+<% if(theme.leancloud.enable) {%>
+ <%- partial('_partial/post/leancloud') %> 
+<% }%>
+<%- js('js/post') %>

@@ -11,7 +11,6 @@ function change(){
 	$a.removeClass("icon-close").addClass("icon-open");
 	}
 }
-
 $(function(){
 
 	//toc 容器
@@ -24,7 +23,6 @@ $(function(){
 		$('.toc-container').hide();
 		return ;
 	}
-
 
 	$level.each(function( i ) {		
 
@@ -81,22 +79,12 @@ $(function(){
 
    $(window).scroll(function () {
 
-
-
    				if( $(window).scrollTop() <= 10 ){
    					resetTocFollow();
    				}else{
-
    					openTocFollow();
    				}
-
-
-
-   				tocPosition();
-
-
-   			
-
+   				tocPosition(); 			
         });
    }
 })
@@ -115,18 +103,10 @@ function tocPosition(){
           	removelayout($(".toc-container"));
 		}                
 
-		//判断滚动条是否到底部 是的话则隐藏toc
-		var document_h = $(document).height(); //整个文档的高度
-
-		var scrollTop_h =$(window).scrollTop(); //滚动条距离最上部分的长度
-
-		var hide_h = $(window).height(); //上方被隐藏的文档的高度
-
-		if(document_h -( hide_h + scrollTop_h) <= 40 ){
-		//'已经到了底部'				
-		removelayout($(".toc-container"));
+		// 判断滚动条是否到底部 是的话则隐藏toc			
+		if(slideIsBottom()){
+			removelayout($(".toc-container"));
 		}
-
 }
 
 // 更换到绝对布局
@@ -203,12 +183,21 @@ function subItemHighLigth( text ){
 	 })
 }
 
-
-
 // 获取元素到浏览器顶部的距离
 function  getOffsetTop( $obj ){
     var mTop = $obj.offset().top; 
     var sTop = $(window).scrollTop();
     var result = mTop - sTop;   
     return result;  
+}
+//判断滚动条是否到底部
+function  slideIsBottom(){
+
+	var document_h = $(document).height(); //整个文档的高度
+
+	var scrollTop_h =$(window).scrollTop(); //滚动条距离最上部分的长度
+
+	var hide_h = $(window).height(); //上方被隐藏的文档的高度
+
+	return (document_h -( hide_h + scrollTop_h) <= 500 );
 }

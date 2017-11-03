@@ -91,13 +91,11 @@ function showHeader(){
 }
 
 function hideHeader( ){
-
   　 $('.header')
     .addClass('slideUp')
-    .removeClass('slideDown');
-
-  
+    .removeClass('slideDown');  
 }
+
 function setHeader(){
     
     $('.header').removeClass('header-fixed')

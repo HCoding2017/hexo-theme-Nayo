@@ -30,6 +30,7 @@ language: en/zh-CN/zh-TW
 
 ### Nayo/_config.yml
 ## Menu
+导航栏菜单设置
 ``` 
 #header nav
 menu:
@@ -40,6 +41,7 @@ menu:
   about: about
 ```
 ## Site Info
+站点信息
 ```
 #site title
 title: Synch
@@ -48,17 +50,17 @@ title: Synch
 profile: 
 # put avatar in theme/source/img
   logo: Nayo
-  avatar: /img/header.jpg
+  avatar: /img/header.png
   author: Synch
   city: GuangZhou
   country: China
-  descrption: If I walk would you run.If I stop would you come.
+  descrption: simple is simple,love is love
 
 # put icon in theme/source/img
 favicon: /img/favicon.png
 ```
-
 ## Sidebar
+siderbar设置
 ```
 #show/hide sidebar [true or false] 
 sidebar: 
@@ -88,7 +90,7 @@ social:
   linkedin:
   others:
 
-#your friend link
+#your friends link
 link:
   ColorHexa: //www.colorhexa.com
   Google: //www.google.com
@@ -109,6 +111,7 @@ fullscreen:
     false
 ```
 ## Code Theme
+代码风格 目前仅有一种
 ```
 # only normal | todo
 # code style
@@ -118,14 +121,14 @@ highlight_theme:
 
 ## Analytics
 站点统计
+填入你的统计id即可
 ```
 #Website analytics [your analytics id]
-baidu_analytics:
-  636802045446222199ae541e32c8133e
+baidu_analytics: 
 google_analytics: 
 ```
 ## 不蒜子
-footer的访客记录
+网站底部的访客记录
 直接在配置文件中启用即可
 ```
 #busuanzi site count
@@ -133,81 +136,61 @@ busuanzi:
   true  
 ```
 
-## LeanCloud
-文章的浏览记录
-1.注册一个 [LeanCloud](https://leancloud.cn/) 账户 创建一个新的应用(名称任意)
-2.创建新的Class名称为'Counter'
-3.在Counter里面新增以下列
+## LeanCloud 
+文章浏览次数记录和文章的评论功能
+
+1. 注册一个 [LeanCloud](https://leancloud.cn/) 账户 创建一个新的应用(名称任意)
+2. 创建新的Class名称为'Counter'
+3. 在Counter里面新增以下列
     time NUMBER
     url String
     title String
-4.在'设置'中获取app_id,app_key填写到配置文件即可
-
+4. 在'设置'中获取app_id,app_key填写到配置文件即可
+5. 设置enable为ture时则开启文章浏览次数记录，设置comment为ture时则开启文章评论
 ```
-#leancloud post count
 leancloud:
-  enable: true
-  app_id: your_appid
-  app_key: your_appkey
+  enable: 
+  comment: 
+  app_id: 
+  app_key: 
 ```
+
 ## Mob Share
 在[Mob](http://dashboard.mob.com/)注册一个你的账号 新建一个ShareSDK获取WebShare的AppKey
-也可以不填入app_key 不统计分享信息
+也可以选择不填入app_key 不统计分享次数
 ```
 mob_share:
   enable: true
   app_key: your_appkey
 ```
 
+## Reward
+文章赞赏/捐赠功能
+```
+#reward
+reward:
+  enable: true
+  pic1: /img/r1.png
+  pic2: /img/r2.png
+```
 
-
-# Content 主题内容
-## Categories
+# Content 页面创建
+## Categories/Tags/About
 1.add new page
 ```
 cd yourblog
-hexo new page categories
+hexo new page categories/tags/about
 ```
 2.add layout in categories/index.md
 such:
 ```
 ---
-title: categories
+title: categories/tags/about
 date: 2017-10-26 22:19:49
-layout: category
+layout: category/tag/about
 ---
 ```
-## Tags
-1.add new page
-```
-cd yourblog
-hexo new page tags
-```
-2.add layout in tags/index.md
-such:
-```
----
-title: tags
-date: 2017-10-26 22:19:49
-layout: tag
----
-```
-## About
-1.add new page
-```
-cd yourblog
-hexo new page about
-```
-2.add layout in about/index.md
-such:
-```
----
-title: about
-date: 2017-10-26 22:19:49
-layout: about
----
-//your detial content here
-```
+
 ***
 # Other 其他
 
@@ -215,7 +198,7 @@ layout: about
 
 如果有其他的问题或者建议 Contact me 
 
-欢迎star和提issue! 
+欢迎[star](https://github.com/Lemonreds/hexo-theme-Nayo)和[提issue](https://github.com/Lemonreds/hexo-theme-Nayo)! 
 
 ## 关于主题名字
 

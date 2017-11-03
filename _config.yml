@@ -36,7 +36,7 @@ widgets:
 
 #recent_posts count
 recent_posts:
-  count: 6
+  count: 8
 
 #social link
 social:  
@@ -74,7 +74,7 @@ highlight_theme:
 
 # website analytics [your analytics id]
 baidu_analytics:
-  # 636802045446222199ae541e32c8133e 
+ # 636802045446222199ae541e32c8133e 
 google_analytics: 
 
 # busuanzi site count
@@ -84,10 +84,17 @@ busuanzi:
 # leancloud post count
 leancloud:
   enable: true
-  app_id: 
-  app_key: 
+  comment: true
+  app_id: cFM0eCo0CQ9xmBXmHi1eltol-gzGzoHsz
+  app_key: oh9tizsnvV2vNvWgqEvoNtQO
 
 #mob share
 mob_share:
   enable: true
-  app_key:
+  app_key: 21d601593a1de
+
+#reward
+reward:
+  enable: false
+  pic1: /img/r1.png
+  pic2: /img/r2.png

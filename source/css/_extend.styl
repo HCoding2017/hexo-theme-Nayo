@@ -4,34 +4,46 @@ $block
   margin-top 1em
   margin-bottom 2em
   padding  .6em
-  background $block-bgr
-  // border-radius 10px
-  // border 1px solid $line-clr 
-  // -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.1)
-  // box-shadow: 0 1px 1px rgba(0,0,0,.1)
+  background $block-bgr  
+
 .block
   @extend $block
 
-$small-block
-  heigth auto
-  padding .9em
-  background $block-bgr
-  border-radius 10px
+
 
 $tags
-  padding .4em
+  padding .3em
   margin  .2em 0
   border 1px solid $border-clr 
-  border-radius 5px
+  border-radius 4px
   display inline-block
   line-height 25px  
-  opacity .9
-  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.1)
-  box-shadow: 0 1px 2px rgba(0,0,0,.1);
+  opacity .8
+  -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.1)
+  box-shadow: 0 1px 1px rgba(0,0,0,.1)
+  font-family: $tag-font
   &:hover
     opacity 1
+    background rgba(255,255,255,.2)
 $radius
   border-radius 10px	
 $img_radius 
   border-radius 5px
  
+$spread
+   @media mq-normal       
+      &::after  
+        content " " 
+        width 0
+        height 2px
+        background $hover-clr 
+        position absolute
+        top 99%
+        left 50%   
+        transition 0.2s 
+      &:hover
+        color $hover-clr         
+      &:hover:after
+        left 0%
+        width 100%
+

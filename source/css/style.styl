@@ -19,6 +19,8 @@ html,body
   margin 0 
   padding 0
   font $font-size $font
+body
+  overflow-x hidden
    
 h1
     font-size 1.6em
@@ -53,11 +55,9 @@ h5,h6
    opacity 0.9
    line-height 10px  
    letter-spacing .5px
-   
 
 a
  text-decoration none 
-
  &:hover
    color $hover-clr 
  &:link
@@ -82,30 +82,16 @@ time
   background $blue 
   color $white
 
-fullscreen = hexo-config("fullscreen")
 .container  
   margin 0 auto
-  margin-top 2em
+  margin-top 2.6em 
   @media mq-normal  
-    position: relative  
-    top: 0
-    left: 0
-    display: flex
-    align-items: flex-start
-    justify-content: center
-
-if  fullscreen is true
-  .container
-     @media mq-normal
-      max-width 90%      
-else
-  .container
-     @media mq-normal
-      max-width 70%
-      
-.container 
-  @media mq-tablet 
-     max-width 98%
+    position relative  
+    top 0
+    left 0
+    display flex
+    align-items flex-start
+    justify-content center
 
 .left
   float left
@@ -125,75 +111,70 @@ else
     cursor pointer
     opacity 0.8
     z-index 5 
-    bottom 10%
+    bottom 8%
     left 90%  
     &:hover
       color $hover-clr
       border 1px solid $border-clr
       border-radius 10px
 
-#container 
-  @media mq-normal     
-    column(container-column)  
 
-#main    
-  @media mq-normal
-    column(main-column)  
-  @media mq-tablet 
-    column(main-column)  
-    
-#sidebar
-  @media mq-normal
-    column(sidebar-column)
-  @media mq-tablet 
-    column(sidebar-column)
-    
 
-#post  
-  position relative
-  width 100%  
-  
+#toc
+    overflow hidden
+    position absolute
+    top 0
+ 
+fullscreen = hexo-config("fullscreen")
+   
+if  fullscreen is true 
+  #post
+      width 58%
+  #toc
+      left 81%
+      width 25%
+      max-width 28%    
+  #main  
+      width 63%
+      margin 0 .9em  
+  #sidebar  
+      width 22%
+      margin 0 .9em
+else 
+  #post
+      width 54%
+  #toc
+      left 79%
+      width 25%
+      max-width 28%    
+  #main  
+      width 50%
+      margin 0 .9em     
+  #sidebar  
+      width 18%
+      margin 0 .9em 
+
+
+
+
   
 sidebar = hexo-config("sidebar")
 
 if sidebar is false
   #main
-        width 70%
-  #main
-      @media mq-tablet 
-        width 100%
-  #post     
-        width 90% 
- 
-
-
+    width 60%
   
 toc = hexo-config("toc")
 
 if toc is false
-  .toc
+  #toc
      display none
      
-.toc       
-    @media mq-tablet 
+#toc      
+  @media mq-mobile 
       display none
-      
 
 
-::-webkit-scrollbar 
-    width 8px 
-    height 8px 
-    background-color $gray   
-
-::-webkit-scrollbar-track  
-    -webkit-box-shadow inset 0 0 6px rgba(0,0,0,0.3)  
-    border-radius  10px
-    background-color  $white   
-
-::-webkit-scrollbar-thumb  
-    border-radius 10px
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3)  
-    background-color #555
 
 
 @import "_partial/header"

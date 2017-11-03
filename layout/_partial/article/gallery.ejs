@@ -5,10 +5,11 @@
 	<% for( i in post.photos){%>
 
 	<div class="gallery-box">
-	<a class="gallery-brg" %>"  style="background-image:url(<%- url_for(post.photos[i]) %>")>
+	<a class="gallery-brg"  style="background-image:url(<%- url_for(post.photos[i]) %>")>
     <img class="gallery-img" src="<%- url_for(post.photos[i]) %>">
-     </a>
-     </div>
+    </a>
+    </div>
+
     <%}%>
 
 </div>

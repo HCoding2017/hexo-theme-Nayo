@@ -1,11 +1,3 @@
-.toc{	
-	color  gray 
-	overflow hidden
-	position absolute
-    top 0%
-    left 87% 
-    width 28%
-}
 .toc-container
 	margin auto 0
 	height 100%	  
@@ -24,19 +16,20 @@
 	font-size 1em
 	font-weight $font-normal
 	color $black
-	margin 0
+	margin .3em 0
 	padding 0
 	letter-spacing  1px
 	
 .toc-item 
 	&:hover
-		 cursor pointer
-		 color $hover-clr
-		 margin-left .3em
+		cursor pointer
+		color $hover-clr
+		margin-left .3em
 		 
 .toc-subitem 
 	display block
 	font-size .9em	
+	margin .2em 0
 	opacity .7
 	margin-left 0.6em
 	font-weight $font-normal
@@ -55,10 +48,10 @@
 	color $hover-clr
 	&:before
 		content "#"
-		font-size 1.3em
+		font-size 1.4em
 
 .toc-sub-active
 	color $hover-clr
 	&:before
 		content "#"
-		font-size 1.3em
+		font-size 1.4em

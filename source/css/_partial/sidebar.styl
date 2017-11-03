@@ -1,5 +1,4 @@
 // #sidebar
-// 	border-left 1px solid $line-clr
 
 .widget 
 	@extend $block	
@@ -7,10 +6,13 @@
 	padding-bottom 1em
 	overflow hidden 
 .widget-title
-	width auto
+	@extend $spread
+	width auto	
+	padding 1em 0
 	display block	
 	font-size 1.1em
 	margin-bottom 1em
+	position relative
 	border-bottom 1px solid $line-clr
 	color gray
 	&:hover
@@ -28,6 +30,7 @@
 	padding 0 auto
 	width 80%
 	border-radius 10px
+	
 #location
 	display block
 	font-size 12px
@@ -47,15 +50,15 @@
 		color $hover-clr			
 				
 //recent posts
-.recent-posts-item
-	@extend $radius
+.recent-posts-item	
+	position relative 
 	display block
 	margin 0.8em 0
 	overflow hidden
 	padding 0.1em
 	font-size 16px
 	&:hover
-		color $hover-clr		
+		color $hover-clr 	
 	
 
 //categories

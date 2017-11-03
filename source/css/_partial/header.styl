@@ -9,22 +9,23 @@
   width  58%
   margin  0 auto  
   height 70px  
-  display flex
-  display -webkit-flex
+  display flex  
   align-items center
   justify-content space-between 
     
 .header-logo   
+    @extend $spread
+    position relative
     padding .5em  
     border-radius 999em
     opacity 1 
     color $black
-    font-size 1.4em   
+    font-size 1.6em   
     &:visited,&:active
       color $black
     &:hover
       color $hover-clr
-      border-bottom 2px solid $hover-clr
+
      
 .header-menu
     height 100%
@@ -33,6 +34,7 @@
     align-items center
  
 .header-menu-link  
+    @extend $spread
     margin 0 .8em
     height 100%
     display inline-block  
@@ -41,22 +43,8 @@
     letter-spacing .5px
     &:visited,&:active
       color $black 
-    @media mq-normal       
-      &::after  
-        content "" 
-        width 0
-        height 2px
-        background $hover-clr 
-        position absolute
-        top 99%
-        left 50%
-        transition .3s
-      &:hover
-        color $hover-clr    
-      &:hover:after
-        left 0%
-        width 100%
-    
+    &:hover
+      color $hover-clr
 //script
 .header-static
   position static

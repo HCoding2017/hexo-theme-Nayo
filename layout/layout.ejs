@@ -8,16 +8,27 @@
   
      <div class="container">
       
-          <section id="main"><%- body %></section> 
+        <%if (is_post()){ %>
+        <section id="post">
+        <%} else{%>
+        <section id="main">
+        <%}%>
+        
+        <%-body%></section>
 
 
-     <% if( !( is_post() || is_current('about')) ){ %>                
+
+     <% if( !( is_post() || is_current('about')) ){ %>             
 
         <% if( theme.sidebar){%>
         <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>       
         <% }%>  
 
     <% } %>
+
+
+
+
 
     </div>        
 
