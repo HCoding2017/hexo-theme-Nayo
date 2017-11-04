@@ -12,8 +12,5 @@ $(function(){
     $(this).removeClass('itemLIn').addClass('itemRIn');   
    	},function(){
    	$(this).removeClass('itemRIn').addClass('itemLIn');  
-
    });
-
 });
-

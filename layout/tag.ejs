@@ -4,28 +4,27 @@
 
   <% if( is_tag()){ %>
 
-  	<% title ="# "+ page.tag %>
-  	<span  class="page-title"><%= title %></span>		
-  	
-	<% page.posts.each(function (post) { %>    	
-    <%- partial('_partial/article',{ post:post}) %>     
-	<% })%>
+    	<% title ="# "+ page.tag %>
+    	<span  class="page-title"><%= title %></span>		
+      	
+      	<% page.posts.each(function (post) { %>    	
+          <%- partial('_partial/article',{ post:post}) %>     
+      	<% })%>
+    	%>
 
-  	%>
+    <%} else {%>	  
 
-  <%} else {%>	  
+        <% title = __('Page.Tags')%>
+        <span class="page-title"><%= title %></span>	
 
-  <% title = __('Page.Tags')%>
-  <span class="page-title"><%= title %></span>	
+        <div class="tag">
 
-  <div class="tag">
+          <%- tagcloud(site.tags,{
+          	min_font:16,
+          	max_font:16,    
+          })%>
 
-  <%- tagcloud(site.tags,{
-  	min_font:16,
-  	max_font:16,    
-  })%>
-
-  </div>
+       </div>
 
   <%}%>
 

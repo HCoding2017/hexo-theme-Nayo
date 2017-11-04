@@ -1,3 +1,15 @@
+---
+title: hexo-theme-Nayo
+date: 2017-10-26 22:16:43
+tags: 
+- Nayo
+categories: 
+- 测试
+---
+This post will help you to install Nayo themes and configure. 
+这篇文章将帮助你安装nayo和了解更多的信息。
+
+<!--more-->
 # hexo-theme-Nayo
 
 ### A clean/white theme for Hexo.
@@ -127,7 +139,7 @@ highlight_theme:
 baidu_analytics: 
 google_analytics: 
 ```
-## 不蒜子
+## Busuanzi
 网站底部的访客记录
 直接在配置文件中启用即可
 ```
@@ -140,13 +152,23 @@ busuanzi:
 文章浏览次数记录和文章的评论功能
 
 1. 注册一个 [LeanCloud](https://leancloud.cn/) 账户 创建一个新的应用(名称任意)
+
 2. 创建新的Class名称为'Counter'
+
 3. 在Counter里面新增以下列
-    time NUMBER
-    url String
-    title String
-4. 在'设置'中获取app_id,app_key填写到配置文件即可
+
+```
+//    列名   类型
+    time   NUMBER
+    url    String
+    title  String
+```
+
+4. 在 '设置' 中获取app_id,app_key填写到配置文件即可
+
 5. 设置enable为ture时则开启文章浏览次数记录，设置comment为ture时则开启文章评论
+
+
 ```
 leancloud:
   enable: 
@@ -156,8 +178,8 @@ leancloud:
 ```
 
 ## Mob Share
-在[Mob](http://dashboard.mob.com/)注册一个你的账号 新建一个ShareSDK获取WebShare的AppKey
-也可以选择不填入app_key 不统计分享次数
+在[ Mob ](http://dashboard.mob.com/)注册一个你的账号 新建一个ShareSDK获取WebShare的AppKey 
+填入即可开启文章分享功能
 ```
 mob_share:
   enable: true
@@ -196,15 +218,15 @@ layout: category/tag/about
 
 ## [Nayo|Github](https://github.com/Lemonreds/hexo-theme-Nayo) 
 
-如果有其他的问题或者建议 Contact me 
+如果有其他的问题或者建议  Contact me 
+我会第一时间回复你 期待你的反馈
 
-欢迎[star](https://github.com/Lemonreds/hexo-theme-Nayo)和[提issue](https://github.com/Lemonreds/hexo-theme-Nayo)! 
+欢迎[ star ](https://github.com/Lemonreds/hexo-theme-Nayo)和[ 提issue ](https://github.com/Lemonreds/hexo-theme-Nayo)! 
 
 ## 关于主题名字
 
 在制作主题的时候刚好听到的一首歌里面的歌词.<东京不太热> - 封茗囧菌
 
-## Email 
-lemonreds@163.com
+## 最后
 
 Have a nice day ! Created by SYNCH.

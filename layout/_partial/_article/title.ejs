@@ -1,0 +1,7 @@
+<div class="article-header">
+    
+     <a class="article-title"  href="<%- url_for(post.path) %>"><%= post.title || __('Untitled')%></a>     
+
+	 <time class="article-date"><%= date(post.date, "YYYY-MM-DD") %></time>       
+
+</div>

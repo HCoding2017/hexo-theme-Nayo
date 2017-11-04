@@ -1,4 +1,3 @@
-
 var logo;
 var logoTitle;
 
@@ -36,6 +35,7 @@ function setTitle(){
 	postTitle = cutString(postTitle , 38);
 
 	$('.header-logo').text(postTitle);		
+	
 }
 //还原logo
 function setLogo(){
@@ -44,12 +44,7 @@ function setLogo(){
 
 }
 
-
-
-
-
-
-
+//---------------
 // reward
 $(function(){
 

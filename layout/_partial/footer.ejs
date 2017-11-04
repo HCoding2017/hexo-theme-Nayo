@@ -1,6 +1,6 @@
 <% var year = date(new Date(), 'YYYY') %>
-<footer id="footer">
 
+<footer id="footer">
 
     <% if (theme.busuanzi){%>
    	 <div class="busuanzi">	
@@ -17,7 +17,7 @@
     <% } %>
 
     	
-	<div class="link">
+	<div class="foot-link">
 	
 	 <%= __('Powered By-') %> 
 
@@ -35,8 +35,5 @@
 	 <% } %>
 
 	 <%= year %>
-	 <%= theme.profile.author || 'Synch' %>
-
-
-
+	 <%= theme.profile.author || 'Synch' %>	 
 </footer>

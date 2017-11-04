@@ -1,14 +1,10 @@
-
 $block
   heigth auto
-  margin-top 1em
-  margin-bottom 2em
+  margin 1em 0
   padding  .6em
   background $block-bgr  
-
 .block
   @extend $block
-
 
 
 $tags
@@ -25,6 +21,7 @@ $tags
   &:hover
     opacity 1
     background rgba(255,255,255,.2)
+    
 $radius
   border-radius 10px	
 $img_radius 
@@ -40,10 +37,9 @@ $spread
         position absolute
         top 99%
         left 50%   
-        transition 0.2s 
+        transition .2s 
       &:hover
         color $hover-clr         
       &:hover:after
         left 0%
         width 100%
-

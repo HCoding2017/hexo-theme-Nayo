@@ -26,7 +26,7 @@
           <% category.posts.each(function (post){ %>      
               <li class="animation-item category-post-item slideLIn">
 
-              <time ><%= date(post.date, "YYYY/MM/DD") %></time>    
+              <time><%= date(post.date, "YYYY/MM/DD") %></time>    
 
               <a href="<%- url_for(post.path) %>"><%= post.title || __('Untitled') %> </a>                
 

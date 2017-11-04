@@ -1,5 +1,5 @@
 function change(){
-	var $a = $('.contents');
+	var $a = $('.toc-contents');
 
 	if( $a.hasClass( "icon-open" )){
 	//open

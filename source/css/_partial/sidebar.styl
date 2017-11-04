@@ -1,10 +1,7 @@
-// #sidebar
-
+//widget
 .widget 
 	@extend $block	
 	text-align center
-	padding-bottom 1em
-	overflow hidden 
 .widget-title
 	@extend $spread
 	width auto	
@@ -19,58 +16,55 @@
 		color $hover-clr 			
 
 //pofile
-#personal-card	
-	text-align center
-	padding 0.8em		
-#descrption
-	color gray	
-#avatar
-	display block
+.pofile
+	padding 0.8em	
+	width 100%
+.avatar
 	margin 0 auto
 	padding 0 auto
-	width 80%
-	border-radius 10px
-	
-#location
+	display block
+	width 80%	
+	border-radius 10px	
+.location
 	display block
 	font-size 12px
-	color  gray	
-//social
+	color gray		
+.descrption
+	color gray	
 .social
 	margin 1em 0
-//count
-#count	
+.count	
 	overflow hidden	
 	div
 		text-align center
 		width 50%
 		float left
 .count-item	
+	display inline
 	&:hover
-		color $hover-clr			
-				
-//recent posts
-.recent-posts-item	
+		color $hover-clr
+
+//recent post
+.recent-post
 	position relative 
 	display block
 	margin 0.8em 0
-	overflow hidden
 	padding 0.1em
-	font-size 16px
+	font-size 15px
 	&:hover
 		color $hover-clr 	
 	
 
 //categories
-.categories-item
+.categories-post
 	@extend $radius
 	clear both
 	display block
 	margin 0.1em 0.2em
 	padding 0.2em
 	overflow hidden
-	font-size 16px		
-.categories-item a	
+	font-size 15px		
+.categories-post a	
 	&:hover		
 		color $hover-clr	
 		padding-left .2em
@@ -79,12 +73,8 @@
 	border-radius 4px
 	padding .2em
 	&:hover		
-		color $hover-clr	
-	
-	
-
-
-//tag
+		color $hover-clr		
+//tagcloud
 .tag-item
 	@extend $tags	
 	border 1px solid $border-clr
@@ -92,13 +82,14 @@
 	margin-bottom 0.3em
 	&:hover		
 		color $hover-clr	
-		border 1px solid $hover-clr 
-		
+		border 1px solid $hover-clr 		
 //link
 .link-item
 	font-size .8rem
-	border-radius 10px
-	
+	border-radius 10px		
 .link-item a	
+	position relative
+	padding .6em 0
+	@extend $spread
 	&:hover
 		color $hover-clr

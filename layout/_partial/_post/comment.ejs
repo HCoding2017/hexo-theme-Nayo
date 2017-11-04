@@ -1,10 +1,10 @@
 <% if(theme.leancloud.comment && theme.leancloud.app_id && theme.leancloud.app_key ){ %>
 
-<div id="comment">
-</div>
+<div id="comment"></div>
 
 <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
 <script src='//unpkg.com/valine@v1.1.8-beta/dist/Valine.min.js'></script>
+<% if(theme.leancloud.comment){  %>
 
 <script>
     new Valine({
@@ -32,10 +32,12 @@
 }
 </style>
 <script>
+//set the placeholder
 $(function(){
     $('.vnick').attr('placeholder','<%=  __('Comment.Nick_holder') %>');
     $('.veditor').attr('placeholder','<%=  __('Comment.Comment_holder') %>');
-    $('.vmail').attr('placeholder','<%=  __('Comment.Mail_holder') %>');
-   
+    $('.vmail').attr('placeholder','<%=  __('Comment.Mail_holder') %>');   
 })
 </script>
+
+<% } %>

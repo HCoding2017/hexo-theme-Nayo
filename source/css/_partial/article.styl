@@ -1,12 +1,12 @@
 //article
-.article-card
+.article
   @extend $block 
   padding 1em 0
   padding-top 0
-  margin-bottom 5em
+  margin-bottom 2em
   overflow hidden  
   
-.article-top 
+.article-header
   margin 0 auto
   padding 20px 20px
   border-left 1.8px solid $gray
@@ -19,7 +19,7 @@
     border-left 3px solid $hover-clr
     color $hover-clr    
     
-.article-top-title     
+.article-title     
     width auto
     max-width 89%
     font-size 1.4em  
@@ -30,20 +30,23 @@
     &:hover
       color $hover-clr
 
-.article-content
+
+.article-excerpt
     padding .3em
     height 100%  
     font-size 15px
     line-height 1.6
+    opacity .9
     text-align justify
     &:hover
       color $hover-clr
       
 
-.article-read-more     
+.article-readmore
+    float right
     text-decoration none    
     padding .5em
-    margin  0 .9em 
+    margin  .4em .9em 
     font-size 0.9em    
     border 1px solid $border-clr
     border-radius 10px
@@ -51,9 +54,6 @@
       color $readmore-hover-clr
       border 1px solid $readmore-hover-clr
   
-.meta
-    margin-top 5em
-
 .gallery-box
     display inline-block
     width 175px

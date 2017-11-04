@@ -1,3 +1,6 @@
+<% if(theme.mob_share.enable){%>
+
+
 <script id="-mob-share" src="http://f1.webshare.mob.com/code/mob-share.js?appkey=<%- theme.mob_share.app_key %>"></script>
 <div class="-mob-share-list">
 		<span class="iconfont icon-share-qq  -mob-share-qq"></span>
@@ -5,3 +8,5 @@
         <span class="iconfont icon-share-weibo -mob-share-weibo"></span>       
         <span class="iconfont icon-share-douban  -mob-share-douban"></span>         
 </div>    
+
+<%}%>

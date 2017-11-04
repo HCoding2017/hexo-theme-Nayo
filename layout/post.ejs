@@ -1,9 +1,9 @@
 <article class="post slideLIn">
 
-<%- partial('_partial/post/head',{post: page}) %> 
+<%- partial('_partial/_post/head',{post: page}) %> 
 
 
-  <div class="post-text">
+  <div class="post-content">
    <% if (page.photos && page.photos.length){ %>
         <% for( i in page.photos){%>
           <img src="<%- url_for(page.photos[i]) %>">             
@@ -12,34 +12,13 @@
     <%- page.content %>    
   </div>  
  
-<%- partial('_partial/article/meta',{post: page}) %> 
-
-<% if(theme.mob_share.enable){%>
-<%- partial('_partial/post/mob_share') %>
-<%}%>
-
-
-<%- partial('_partial/post/nav',{post: page}) %> 
-
-<% if(theme.reward.enable){  %>
-<%- partial('_partial/post/reward') %> 
-<% } %>
-<% if(theme.leancloud.comment){  %>
- <%- partial('_partial/post/comment') %>
-<% } %>
-
-
-<%# partial('_partial/post/wdigets',{post: page}) %> 
+<%- partial('_partial/meta',{post: page}) %> 
+<%- partial('_partial/_post/mob_share') %>
+<%- partial('_partial/_post/nav',{post: page}) %> 
+<%- partial('_partial/_post/reward') %> 
+<%- partial('_partial/_post/comment') %>
+<%- partial('_partial/_post/wdigets',{post: page}) %> 
 </article>
+<%- partial('_partial/_post/toc',{post:page}) %>
 
-
-<% if(theme.toc){  %>
- <%- partial('_partial/post/toc',{post:page}) %>
-<% } %>
-
-
-
-<% if(theme.leancloud.enable) {%>
- <%- partial('_partial/post/leancloud') %> 
-<% }%>
 <%- js('js/post') %>
