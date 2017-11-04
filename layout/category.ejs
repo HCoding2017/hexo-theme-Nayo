@@ -19,12 +19,12 @@
   <span class="page-title"><%= title %></span>	
 
     <% site.categories.forEach( function ( category ){%>
-    <div class="category-item slideLIn">
+    <div class="category-item slideDownMin">
       <a class="category-name" href="<%- url_for(category.path)%>"> <%- category.name %> </a>
 
       <ul class="category-posts">
           <% category.posts.each(function (post){ %>      
-              <li class="animation-item category-post-item slideLIn">
+              <li class="animation-item category-post-item slideDownMin">
 
               <time><%= date(post.date, "YYYY/MM/DD") %></time>    
 

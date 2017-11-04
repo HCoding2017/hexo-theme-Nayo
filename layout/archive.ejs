@@ -16,13 +16,13 @@
 		    <%}%>
 
 
-      <div class="animation-item  archive-item">   	
+      <div class="animation-item  archive-item slideDownMin">   	
 
         <span class="left archive-date"> <%= date(post.date, "MM-DD") %></span>   
 
         <% var title = truncate(post.title, {length:84}) %>
 
-        <a class="left archive-title" href="<%- url_for(post.path) %>"><%= title || __('Untitled')%></a>
+        <a class="left archive-title " href="<%- url_for(post.path) %>"><%= title || __('Untitled')%></a>
 
       </div>
 

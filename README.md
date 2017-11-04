@@ -1,15 +1,3 @@
----
-title: hexo-theme-Nayo
-date: 2017-10-26 22:16:43
-tags: 
-- Nayo
-categories: 
-- 测试
----
-This post will help you to install Nayo themes and configure. 
-这篇文章将帮助你安装nayo和了解更多的信息。
-
-<!--more-->
 # hexo-theme-Nayo
 
 ### A clean/white theme for Hexo.

@@ -3,8 +3,8 @@ $(function(){
 	$('.category-name').hover(function (){
 		$('.category-posts').each(function (i){
 			//hide the last hover
-			$(this).hide();
+			$(this).addClass('slideDownMin').hide();
 		});
-		$(this).next('ul').show();		
+		$(this).removeClass('slideDownMin').next('ul').show();		
 	})
 })
