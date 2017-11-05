@@ -20,6 +20,8 @@
 
     <% site.categories.forEach( function ( category ){%>
     <div class="category-item slideDownMin">
+    
+      <span class="iconfont icon-category"></span>
       <a class="category-name" href="<%- url_for(category.path)%>"> <%- category.name %> </a>
 
       <ul class="category-posts">

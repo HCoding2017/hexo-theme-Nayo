@@ -4,7 +4,7 @@
  	
       <% site.categories.sort('length',-1).each (function (category){%>
       	
-      	<div class="animation-item categories-post slideDownMin">
+      	<div class="categories-post slideDownMin">
 
       	<a class="left" href="<%- url_for(category.path) %>"><%- category.name %></a>
       	<span class="right categories-count"><%- category.length %></span>	

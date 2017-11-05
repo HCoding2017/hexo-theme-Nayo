@@ -17,15 +17,15 @@
         <% title = __('Page.Tags')%>
         <span class="page-title"><%= title %></span>	
 
-        <div class="tag slideDownMin">
+        <% site.tags.sort('date',-1).each( function (tag){%>
 
-          <%- tagcloud(site.tags,{
-          	min_font:16,
-          	max_font:16,    
-          })%>
+            <span class="tag-wrap slideDownMin">
+               <span class="iconfont icon-tag-inner"></span>
+               <a class="tag-link" href="<%- url_for(tag.path) %>"><%- tag.name %></a>%>
+             </span>
 
-       </div>
-
-  <%}%>
+        <% })%>
+    <%}%>
 
 </section>
+
