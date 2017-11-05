@@ -12,9 +12,17 @@
 		</time>
 
 
+		<%  var length = page.content.replace(/<\/?[^>]*>/g, "").replace(/ /g,'').length;%>
+
+		<span class="post-words"><span class="iconfont icon-words"></span>
+		<%= length %>
+		</span>
+
+
 		<% if(theme.leancloud.enable && theme.leancloud.app_id && theme.leancloud.app_key ) {%>
 		<%- partial('_partial/_post/leancloud') %> 	
-		<%}%>
+		<%}%>	
+		
 	</div>
 
 </div>

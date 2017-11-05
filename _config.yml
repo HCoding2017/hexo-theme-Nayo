@@ -36,7 +36,7 @@ widgets:
 
 #recent_posts count
 recent_posts:
-  count: 8
+  count: 6
 
 #social link
 social:  
@@ -75,7 +75,7 @@ highlight_theme:
 
 # website analytics [your analytics id]
 baidu_analytics:
- 636802045446222199ae541e32c8133e 
+  636802045446222199ae541e32c8133e 
 google_analytics: 
 
 # busuanzi site count

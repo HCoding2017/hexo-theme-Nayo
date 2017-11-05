@@ -10,16 +10,20 @@
 .post-title 
   display block
   font-size 2.8rem
+  font-family $post-title-font
 .post-info
   width 100%
   margin 2em .5em    
   font-family $time-font
-.post-time,.post-visitor
+.post-time,.post-words,.post-visitor
   font-size 1.2rem 
   opacity .6
   font-style italic 
-  margin-left .1em 
+  padding-left .12em 
   
+.post-content  
+  margin-top 1rem
+  margin-bottom 5rem
 .post-content a
   @extend $spread
   position relative
@@ -36,6 +40,7 @@
   margin 1rem 0
 .-mob-share-list span
   padding .2rem 
+  margin 1rem 0
   border 1px solid gray
   border-radius 10px
   cursor pointer
@@ -102,3 +107,14 @@
 .post-widget-title
   font-size 1em 
   margin-bottom 1em
+  
+
+
+//meta
+.meta
+    margin: .2em 0
+    width: 100%
+.category-link,.tag-link    
+    &:hover 
+     color $hover-clr
+     border-bottom 1px solid $blue

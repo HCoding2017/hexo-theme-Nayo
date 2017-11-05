@@ -1,9 +1,7 @@
 <div class="article-excerpt">	
 
-	<% if(post.photos && post.photos.length!=0) {%>
-		<%- partial('_partial/_article/gallery',{post:post}) %>	
-	 <% } %> 
-
+	
+  <%- partial('_partial/_article/gallery',{post:post}) %>	
 
   <% if (post.excerpt) { %>
 
