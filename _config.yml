@@ -17,7 +17,7 @@ profile:
   author: Synch
   city: GuangZhou
   country: China
-  descrption: simple is simple,love is love
+  descrption: simple is simple,but love is love
 
 # put icon in theme/source/img
 favicon: /img/favicon.png
@@ -85,13 +85,13 @@ busuanzi:
 leancloud:
   enable: true
   comment: true
-  app_id: 
-  app_key: 
+  app_id: #cFM0eCo0CQ9xmBXmHi1eltol-gzGzoHsz
+  app_key: #oh9tizsnvV2vNvWgqEvoNtQO
 
 #mob share
 mob_share:
   enable: true
-  app_key: 
+  app_key: #21d601593a1de
 
 #reward
 reward:

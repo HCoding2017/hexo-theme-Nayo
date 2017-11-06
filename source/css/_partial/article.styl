@@ -5,7 +5,7 @@
   padding-top 0
   margin-bottom 2em
   overflow hidden  
-  
+                
 .article-header
   margin 0 auto
   padding 20px 20px
@@ -43,16 +43,14 @@
       
 
 .article-readmore
-    float right
-    text-decoration none    
+    @extend $close
+    position relative
+    float right   
     padding .5em
     margin  .4em .9em 
-    font-size 0.9em    
-    border 1px solid $border-clr
-    border-radius 10px
+    font-size 1rem    
     &:hover
-      color $readmore-hover-clr
-      border 1px solid $readmore-hover-clr
+      color $readmore-hover-clr     
   
 .gallery-box
     display inline-block

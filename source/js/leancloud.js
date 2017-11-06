@@ -1,4 +1,4 @@
-//leancloud
+//init leancloud
 $(function(){
 
     var Counter=AV.Object.extend("Counter");
