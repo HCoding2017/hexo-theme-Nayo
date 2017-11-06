@@ -3,7 +3,7 @@
 	@extend $block	
 	text-align center
 .widget-title
-	@extend $spread
+	@extend $close
 	width auto	
 	padding 1em 0
 	display block	
@@ -49,10 +49,12 @@
 	position relative 
 	display block
 	margin 0.8em 0
-	padding 0.1em
+	padding 0.1rem
 	font-size 15px
+	width auto
 	&:hover
-		color $hover-clr 	
+		color $hover-clr		
+	
 	
 
 //categories
@@ -67,9 +69,8 @@
 .categories-post a	
 	&:hover		
 		color $hover-clr	
-		padding-left .2em
 .categories-count
-	border-bottom .4px solid #848484
+	border-bottom .2px solid #848484
 	padding .2em
 	&:hover		
 		color $hover-clr		
@@ -87,8 +88,7 @@
 	font-size .8rem
 	border-radius 10px		
 .link-item a	
-	position relative
-	padding .6em 0
-	@extend $spread
+	padding .3em 0	
 	&:hover
 		color $hover-clr
+		border-bottom 1px solid $hover-clr

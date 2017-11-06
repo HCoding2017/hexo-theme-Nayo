@@ -9,10 +9,10 @@
 			
 		<h3><%= profile.author%></h3>
 		
-		<h4 class="descrption"><%= profile.descrption%></h4>
+		<h4 class="descrption slideDownMin"><%= profile.descrption%></h4>
 	
 		<% if(profile.city || profile.country){ %>
-		<span class="location iconfont icon-location">
+		<span class="location iconfont icon-location slideDownMin">
 		 <%- profile.city%>
 		 <%- profile.country%>
 		 </span>	
@@ -24,7 +24,7 @@
 	    <% } %>
     	</div>
 			
-		<div class="count">
+		<div class="count slideDownMin">
 			<a href="<%- url_for('archives') %>">	
 			<div class="count-item">				
 			<h4> <%= site.posts.length %> </h4> <h4> <%= __('Sidebar.Posts') %></h4></div></a>	

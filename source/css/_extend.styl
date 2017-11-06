@@ -42,3 +42,19 @@ $spread
       &:hover:after
         left 0%
         width 100%
+$close
+   @media mq-normal  
+      &::after
+        content " " 
+        width 100%
+        height 0px
+        background $white
+        position absolute
+        top 99% 
+        left 0%
+        transition .3s
+      &:hover:after
+        background $hover-clr
+        height 2px
+        top 90%
+        left 0%

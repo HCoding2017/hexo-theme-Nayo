@@ -51,11 +51,10 @@ social:
   others:
 
 #your friends link
-link: 
-  Google: //www.google.com  
-  ColorHexa: //www.colorhexa.com 
+link:     
   Synch: //synch.site
   Hexo: //https://hexo.io/
+  ColorHexa: //www.colorhexa.com 
 # linkd: 
 # linke:
 

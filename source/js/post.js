@@ -43,7 +43,6 @@ function setLogo(){
 	$('.header-logo').text(logoTitle);	
 
 }
-
 //---------------
 // reward
 $(function(){
@@ -72,6 +71,5 @@ function hideReward(){
 	
 	$('.reward-img-left').removeClass('slideLIn').hide();
 	$('.reward-img-right').removeClass('slideRIn').hide();
-
 
 }
