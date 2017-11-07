@@ -29,8 +29,8 @@ sidebar:
 # sidebar widgets
 widgets:
 - profile
-- recent
-- category
+#- recent
+#- category
 - tagcloud
 - link
 
