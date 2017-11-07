@@ -199,5 +199,5 @@ function  slideIsBottom(){
 
 	var hide_h = $(window).height(); //上方被隐藏的文档的高度
 
-	return (document_h -( hide_h + scrollTop_h) <= 300 );
+	return (document_h -( hide_h + scrollTop_h) <= 200 );
 }

@@ -2,6 +2,11 @@
     
      <a class="article-title"  href="<%- url_for(post.path) %>"><%= post.title || __('Untitled')%></a>     
 
-	 <time class="article-date"><%= date(post.date, "YYYY-MM-DD") %></time>       
+
+	 <%	var date_format = config.date_format %>
+
+	 <time class="article-date"><%= date(post.date, date_format || "YYYY/MM/DD") %></time>    
+
+
 
 </div>
