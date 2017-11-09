@@ -29,7 +29,7 @@ sidebar:
 # sidebar widgets
 widgets:
 - profile
-#- recent
+- recent
 #- category
 - tagcloud
 - link
@@ -79,7 +79,7 @@ google_analytics:
 
 # busuanzi site count
 busuanzi:
-  true
+  false
 
 # leancloud post count
 leancloud:
