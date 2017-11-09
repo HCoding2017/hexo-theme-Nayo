@@ -24,14 +24,14 @@
 	    <% } %>
     	</div>
 			
-		<div class="count slideDownMin">
+		<div class="count">
 			<a href="<%- url_for('archives') %>">	
 			<div class="count-item">				
-			<h4> <%= site.posts.length %> </h4> <h4> <%= __('Sidebar.Posts') %></h4></div></a>	
+			<h4 class="slideDownMin"> <%= site.posts.length %> </h4> <h4> <%= __('Sidebar.Posts') %></h4></div></a>	
 
 			<a href="<%- url_for('categories') %>">	
 			<div class="count-item">
-			<h4> <%= site.categories.length %></h4> <h4> <%=  __('Sidebar.Categories') %></h4></div></a>	
+			<h4 class="slideDownMin"> <%= site.categories.length %></h4> <h4> <%=  __('Sidebar.Categories') %></h4></div></a>	
 
 		</div>
 </div>

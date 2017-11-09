@@ -57,29 +57,20 @@
 	
 	
 
-//categories
-.categories-post
-	@extend $radius
-	clear both
-	display block
-	margin 0.1em 0.2em
-	padding 0.2em
-	overflow hidden
-	font-size 15px		
-.categories-post a	
-	&:hover		
-		color $hover-clr	
-.categories-count
-	border-bottom 1px solid $gray
-	padding .2em
-	&:hover		
-		color $hover-clr		
-//tagcloud
-.tag-item
+//categories tagcloud
+.meta-item
 	@extend $tags	
 	&:hover		
 		color $hover-clr	
-		border 1px solid $hover-clr 		
+		border 1px solid $hover-clr 	
+
+.meta-count	
+	font-size .4em
+	padding-bottom .6em
+	&:hover		
+		color $hover-clr		
+
+
 //link
 .link-item
 	font-size .8rem

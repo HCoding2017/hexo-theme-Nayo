@@ -11,7 +11,6 @@ title: Synch
 
 #your profile
 profile: 
-# put avatar in theme/source/img
   logo: Nayo
   avatar: /img/header.png
   author: Synch
@@ -19,7 +18,7 @@ profile:
   country: China
   descrption: simple is simple,but love is love
 
-# put icon in theme/source/img
+# website favicon
 favicon: /img/favicon.png
 
 #show/hide sidebar [true or false] 
@@ -30,11 +29,11 @@ sidebar:
 widgets:
 - profile
 - recent
-#- category
+- category
 - tagcloud
 - link
 
-#recent_posts count
+#recent_posts amount
 recent_posts:
   count: 6
 
@@ -72,14 +71,14 @@ fullscreen:
 highlight_theme: 
     normal
 
-# website analytics [your analytics id]
+# website analytics 
 baidu_analytics:
  636802045446222199ae541e32c8133e 
 google_analytics: 
 
 # busuanzi site count
 busuanzi:
-  false
+  true
 
 # leancloud post count
 leancloud:
@@ -93,7 +92,7 @@ mob_share:
   enable: true
   app_key: #21d601593a1de
 
-#reward
+#post reward
 reward:
   enable: false
   pic1: /img/r1.png

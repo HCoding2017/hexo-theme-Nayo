@@ -20,9 +20,10 @@ $(function(){
 
 	//如果是空的话 隐藏toc容器
 	if($level.length == 0)		
-		return ;
-	else
-		$('.toc-container').show();
+		return ;	else
+		$('.toc-container').show()
+
+		
 
 	$level.each(function( i ) {		
 
