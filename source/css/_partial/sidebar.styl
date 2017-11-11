@@ -13,7 +13,7 @@
 	border-bottom 1px solid $line-clr
 	color gray
 	&:hover
-		color $hover-clr 			
+		color $main-clr 			
 
 //pofile
 .pofile
@@ -42,7 +42,23 @@
 .count-item	
 	display inline
 	&:hover
-		color $hover-clr
+		color $main-clr
+//search widget
+.search-widget	
+	margin 2.8rem auto
+	background-color $search-clr
+	width 72%
+	padding 6px
+	height 20px
+	border-radius 8px
+	border 1px solid $border-clr
+	text-align center
+	
+.search-word
+	font-size 16px
+	color gray
+
+
 
 //recent post
 .recent-post
@@ -53,7 +69,7 @@
 	font-size 15px
 	width auto
 	&:hover
-		color $hover-clr		
+		color $main-clr 
 	
 	
 
@@ -61,14 +77,14 @@
 .meta-item
 	@extend $tags	
 	&:hover		
-		color $hover-clr	
-		border 1px solid $hover-clr 	
+		color $main-clr		
+		border 1px solid $main-clr  	
 
 .meta-count	
 	font-size .4em
 	padding-bottom .6em
 	&:hover		
-		color $hover-clr		
+		color $main-clr 		
 
 
 //link
@@ -78,5 +94,5 @@
 .link-item a	
 	padding .3em 0	
 	&:hover
-		color $hover-clr
-		border-bottom 1px solid $hover-clr
+		color $main-clr 
+		border-bottom 1px solid $main-clr 

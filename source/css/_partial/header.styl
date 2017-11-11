@@ -14,18 +14,17 @@
 .header-logo   
     @extend $close
     position relative
-    padding 1.1rem  
+    display inline-block
+    line-height 70px
+    padding 0 .5em 
     color $black
     font-size 1.52rem    
     font-family $logo-font 
+    height 100%
     &:visited,&:active
       color $black
-    &:hover
-      color $hover-clr
-      transform scale(1.01)
-      -webkit-transform scale(1.01)
-       
-
+    &:hover 
+      color $main-clr
      
 .header-menu
     height 100%
@@ -44,7 +43,7 @@
     &:visited,&:active
       color $black 
     &:hover
-      color $hover-clr 
+      color $main-clr
    
 //script
 .header-static
@@ -60,7 +59,7 @@
   background-color $white 
   transition .6   
 .header-menu-active  
-  border-bottom 2px solid $hover-clr
+  border-bottom 2px solid $main-clr
   &:visited,&:active
-      color $hover-clr
+      color $main-clr
    

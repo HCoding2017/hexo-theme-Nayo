@@ -22,14 +22,15 @@
   padding-left .12em 
   
 .post-content  
+  letter-spacing .8px
   margin-top 1rem
   margin-bottom 5rem
 .post-content a
   @extend $close
-  color $cyan
+  color $main-clr
   position relative  
   &:hover
-    color $hover-clr
+    color $sub-clr
  
 
 //post/mob_share.ejs
@@ -46,7 +47,7 @@
   cursor pointer
   opacity .7
   &:hover
-      border 1px solid $hover-clr      
+      border 1px solid $main-clr      
        
 // post/nav.ejs 
 .nav    
@@ -63,7 +64,7 @@
 .nav-link   
     font-size 1em
     &:hover
-      color $hover-clr
+      color $main-clr
    
 
 // post/reward
@@ -100,11 +101,11 @@
 
 // post/widgets.ejs
 .post-widget
-  padding 3em 0
+  padding 2em 0
   text-align center
 .post-widget a 
   &:hover 
-     color $hover-clr
+     color $main-clr
 .post-widget-title
   font-size 1em 
   margin-bottom 1em
@@ -118,5 +119,5 @@
 .category-link,.tag-link    
     padding .2em 0
     &:hover 
-     color $hover-clr
-     border-bottom 1px solid $blue
+     color $main-clr
+     border-bottom 1px solid $sub-clr

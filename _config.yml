@@ -6,10 +6,14 @@ menu:
   tags: tags
   about: about
 
+# site color [blue black red]
+# hope you can submit your color code to me!
+color: blue
+
 #site title
 title: Synch
 
-#your profile
+#author profile
 profile: 
   logo: Nayo
   avatar: /img/header.png
@@ -18,16 +22,18 @@ profile:
   country: China
   descrption: simple is simple,but love is love
 
-# website favicon
+#site favicon
 favicon: /img/favicon.png
 
-#show/hide sidebar [true or false] 
+#visiblity sidebar [true or false] 
 sidebar: 
     true
   
-# sidebar widgets
+#sidebar widgets
+# add '#' before to hide the widget
 widgets:
 - profile
+- search
 - recent
 - category
 - tagcloud
@@ -62,7 +68,7 @@ link:
 toc:
     true
 
-# is fullscreen [ more width or less]
+# is fullscreen  [true or false] 
 fullscreen:
     false
 

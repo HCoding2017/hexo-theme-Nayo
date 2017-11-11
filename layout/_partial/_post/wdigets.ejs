@@ -1,3 +1,4 @@
+<% if (site.categories.length){ %>
 
 <div class="post-widget">
   
@@ -10,7 +11,10 @@
 
 </div>
 
+<%} %>
 
+
+<% if (site.tags.length){ %>
 <div class="post-widget">
   
   <h4 class="post-widget-title iconfont icon-tag"><a href="<%-url_for(theme.menu.tags || '(no title)' )%>"> <%- __('Page.Tags')%></a></h4>
@@ -24,3 +28,4 @@
   </div>
 </div>
 
+<%} %>

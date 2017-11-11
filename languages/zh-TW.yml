@@ -29,3 +29,8 @@ Comment:
   Nick_holder: 昵稱
   Mail_holder: 郵箱
   Comment_holder: 說點什麼吧...
+
+Search:
+  Sidebar_words: 搜索
+  input_words: 搜索
+  Search_nonthing: 什麼都沒找到呀！

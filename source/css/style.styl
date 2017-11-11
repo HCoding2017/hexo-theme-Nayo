@@ -27,7 +27,7 @@ h1
     &:before
       content "#"
       font-size 1.2em
-      color $hover-clr
+      color $main-clr
 h2  
     font-size 1.5em
     font-weight $font-blod 
@@ -60,9 +60,9 @@ h5,h6
   
 
 a
- text-decoration none 
+ text-decoration none  
  &:hover
-   color $hover-clr 
+   color $main-clr
  &:link
    color $black
  &:visited
@@ -109,11 +109,11 @@ time
     position fixed   
     cursor pointer
     opacity 0.8
-    z-index 5 
+    z-index 20
     bottom 8%
     left 90%  
     &:hover
-      color $hover-clr
+      color $main-clr      
       border 1px solid $border-clr
       border-radius 10px
 
@@ -188,7 +188,7 @@ if toc is false
     
 
 ::selection 
-  background $blue 
+  background $sub-clr
   color $white
   
 @import "_partial/header"
@@ -201,6 +201,7 @@ if toc is false
 @import "_partial/tags"
 @import "_partial/toc"
 @import "_partial/sidebar"
+@import "_partial/search"
 
 @import "_animation"
 

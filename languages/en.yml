@@ -24,8 +24,12 @@ Contents: Contents
 Read_more: Read More  
 Untitled: Untitled
 
-
 Comment:
   Nick_holder: NickName
   Mail_holder: Mail
   Comment_holder: Typing Something
+
+Search:
+  Sidebar_words: Search
+  input_words: Search
+  Search_nonthing: Wow,Search nonthing!

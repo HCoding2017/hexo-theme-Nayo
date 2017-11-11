@@ -1,54 +1,61 @@
 
 // Fonts
-$font-size = 15px
-$font =  'Source Sans Pro','Roboto','Open Sans Condensed','Verdana','Helvetica','微软雅黑', 'sans serif' 
-$font-normal = 400
-$font-blod  = 500
-$font-max = 600
+$font-size 		= 15px
+$font 			=  'Source Sans Pro','Roboto','Open Sans Condensed','Verdana','Helvetica','微软雅黑', 'sans serif' 
+$font-normal 	= 400
+$font-blod  	= 500
+$font-max 		= 600
 
-$logo-font = 'Lucida Grande','Open Sans Condensed'
-$post-title-font = 'Helvetica Neue','Open Sans Condensed','微软雅黑'
-$page-title-font =  'Helvetica Neue','Verdana','PingFang TC'
-$time-font = 'Times New Roman'
-$year-font = 'Helvetica Neue','Open Sans Condensed','Optima'
-$archive-font = 'Open Sans Condensed','Optima'
-$tag-font = 'Roboto','Hiragino Sans GB', 'Microsoft YaHei','微软雅黑'
+$logo-font 		= 'Lucida Grande','Open Sans Condensed'
+$post-title-font= 'Helvetica Neue','Open Sans Condensed','微软雅黑'
+$page-title-font=  'Helvetica Neue','Verdana','PingFang TC'
+$time-font 		= 'Times New Roman'
+$year-font 		= 'Helvetica Neue','Open Sans Condensed','Optima'
+$archive-font 	= 'Open Sans Condensed','Optima'
+$tag-font 		= 'Roboto','Hiragino Sans GB', 'Microsoft YaHei','微软雅黑'
 
 // Colors
-$bgr = #F5F6FA
-$block-bgr = #f6f8fa
-$line-clr =  #f0f0f0
-$border-clr = #d5dce5
+$bgr 		= #F5F6FA
+$block-bgr 	= #f6f8fa
+$line-clr 	= #f0f0f0
+$border-clr	= #d5dce5
+$search-clr = #FBFCFD
 
-
-$hover-clr =  #0088cc 
-
-
-
-$cyan =  #0088cc 
-$blue =  #00aacc
-
-$red = 	 #ff6767
-
-$cyan = #0077b3
-
-
-$white = #fff
-$gray = #bfbfbf
-$black = #454545
+$white 		= #FFF
+$gray 		= #AAA
+$black		= #454545
 
 
 
-//markdown
-$blockquote-clr = #0088cc
+$blue-main  = #0088cc 
+$blue-sub   = #00aacc
+
+$black-main = #000000
+$black-sub  = #4c4c4c
+
+$red-main 	= #ff8080
+$red-sub	= #ff9a9a
 
 
 
+//default site color
+$main-clr = $blue-main 
+$sub-clr =  $blue-sub 
 
-// Grids
-column-width = 80px
-gutter-width = 20px
-columns = main-column + sidebar-column 
+
+color =  hexo-config("color")
+
+if color is 'black'
+	$main-clr = $black-main
+	$sub-clr  = $black-sub
+
+
+if color is 'red'
+	$main-clr = $red-main
+	$sub-clr  = $red-sub
+
+
+
 
 // Media queries
 mq-mobile = "screen and (max-width: 479px)"
