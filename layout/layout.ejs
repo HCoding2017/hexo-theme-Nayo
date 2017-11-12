@@ -19,23 +19,18 @@
 
 
      <% if( !( is_post() || is_current('about')) ){ %>             
-
-        <% if( theme.sidebar){%>
-        <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>       
-        <% }%>  
-
+       
+        <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>      
+    
     <% } %>
-
-
 
     </div>        
 
 
-    <div class="back-to-top iconfont icon-backtotop fadeIn"></div>      
-    
+    <div class="back-to-top iconfont icon-backtotop fadeIn"></div> 
+
     <%- partial('_partial/footer') %> 
     <%- partial('_partial/after-footer') %> 
-
-    <%- js('js/animation') %> 
-  </body>
+  </body>   
+    <%- js('js/animation.js') %>   
 </html>

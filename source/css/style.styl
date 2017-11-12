@@ -83,14 +83,21 @@ time
 
 
 .container  
-  margin 0 auto
-  margin-top 2.6em
+  margin-top 1.8em
   position relative  
   top 0
   left 0
   display flex
   align-items flex-start
   justify-content center
+
+sidebar_position = hexo-config('sidebar.position')
+if sidebar_position is left
+  .container  
+    flex-direction row-reverse
+
+
+
 
 .left
   float left
@@ -132,25 +139,22 @@ if  fullscreen is true
   #toc
       left 81%    
   #main  
-      width 63%
-      margin 0 1em  
+      width 63%     
   #sidebar  
-      width 22%
-      margin 0 .9em
+      width 22%     
 else 
   #post
       width 54%
   #toc
       left 79%      
   #main  
-      width 50%
-      margin 0 1em     
+      width 50%    
   #sidebar  
       width 18%
-      margin 0 .9em 
+      
 
-
-
+#main ,#sidebar
+   margin 0 2em 
 
   
 sidebar = hexo-config("sidebar")
