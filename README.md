@@ -23,7 +23,7 @@ theme: Nayo
 #### 2017.11.11    v1.0.0
 - 主题配色定制
 - Widget 站内搜索
-- Siderbar 方向
+- Sidebar 位置
 
 # Other 其他
 欢迎提交你的颜色配置方案,有任何问题欢迎在Issue提出，我会第一时间回复你

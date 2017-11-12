@@ -22,15 +22,15 @@
   padding-left .12em 
   
 .post-content  
-  letter-spacing .8px
+  letter-spacing .4px
   margin-top 1rem
   margin-bottom 5rem
 .post-content a
   @extend $close
-  color $main-clr
-  position relative  
-  &:hover
-    color $sub-clr
+  color $thr-clr  
+  position relative   
+  &:hover    
+    color $sub-clr 
  
 
 //post/mob_share.ejs
@@ -47,7 +47,8 @@
   cursor pointer
   opacity .7
   &:hover
-      border 1px solid $main-clr      
+    color $thr-clr 
+    border 1px solid $thr-clr     
        
 // post/nav.ejs 
 .nav    
@@ -69,27 +70,26 @@
 
 // post/reward
 .reward-icon 
-  display block
-  width 100%
-  margin .4em 0
+  margin .4em auto
   text-align center
   cursor pointer
+  width 40px 
+  
 .reward
   margin-bottom 2em
-  width 100%  
   display flex
   justify-content center
 
 .reward-img-left,.reward-img-right
   margin 1em .5em  
-  width 300px
+  width 280px
   height auto
   display none
 .reward-brg    
   @extend $img_radius 
   display block
-  width 300px
-  height 300px
+  width 280px
+  height 280px
   overflow hidden
   background-size cover
   background-position center

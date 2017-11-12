@@ -23,34 +23,31 @@
 .toc-item 
 	&:hover
 		cursor pointer
-		color $main-clr
+		color $thr-clr 
 		margin-left .3em
 		 
 .toc-subitem 	
 	display block
 	font-size .85rem	
-	margin .2em 0
-	opacity .7
+	margin .2em 0	
+	color gray
 	margin-left 0.6em
 	font-weight $font-normal
 
 .toc-subitem
 	&:hover
 		cursor pointer
-		color  $main-clr
-		margin-left 0.8em
+		color  $thr-clr 
+		margin-left  .4em
 
 //script CSS
-.toc-fixed
+.toc-fixed	
 	position fixed 
+	width 90%
 	top 0 
 .toc-active
-	color $main-clr
-	&:before
-		content "#"
-		font-size 1.4em
+	color $thr-clr 
+	
 .toc-sub-active
-	color $sub-clr
-	&:before
-		content "#"
-		font-size 1.4em
+	color $thr-clr 
+	

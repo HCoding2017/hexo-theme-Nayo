@@ -20,40 +20,35 @@ $block-bgr 	= #f6f8fa
 $line-clr 	= #f0f0f0
 $border-clr	= #d5dce5
 $search-clr = #FBFCFD
+ 
+
 
 $white 		= #FFF
 $gray 		= #AAA
 $black		= #454545
 
 
-
 $blue-main  = #0088cc 
 $blue-sub   = #00aacc
+$blue-thr 	= #00bbcc
+
 
 $black-main = #000000
-$black-sub  = #4c4c4c
-
-$red-main 	= #ff8080
-$red-sub	= #ff9a9a
-
+$black-sub  = #727272
+$black-thr 	= #e26d6d
 
 //default site color
-$main-clr = $blue-main 
-$sub-clr =  $blue-sub 
+$main-clr 	= $blue-main 
+$sub-clr 	= $blue-sub 
+$thr-clr 	= $blue-thr
 
 
 color =  hexo-config("color")
 
 if color is 'black'
-	$main-clr = $black-main
-	$sub-clr  = $black-sub
-
-
-if color is 'red'
-	$main-clr = $red-main
-	$sub-clr  = $red-sub
-
-
+	$main-clr	 = $black-main
+	$sub-clr  	 = $black-sub
+	$thr-clr 	 = $black-thr
 
 
 

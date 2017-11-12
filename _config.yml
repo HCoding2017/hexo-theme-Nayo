@@ -6,7 +6,7 @@ menu:
   tags: tags
   about: about
 
-# site color [blue black red]
+# site color [blue black]
 # hope you can submit your color code to me!
 color: black
 
@@ -58,9 +58,9 @@ social:
 
 #your friends link
 link:     
-  Synch: //synch.site
-  Hexo: //https://hexo.io/
+  Nayo: https://github.com/Lemonreds/hexo-theme-Nayo
   ColorHexa: //www.colorhexa.com 
+  Khroma: http://khroma.co
 # linkd: 
 # linke:
 
@@ -80,7 +80,7 @@ highlight_theme:
 
 # website analytics 
 baidu_analytics:
- #636802045446222199ae541e32c8133e 
+ 636802045446222199ae541e32c8133e 
 google_analytics: 
 
 # busuanzi site count

@@ -3,7 +3,7 @@
 <footer id="footer">
 
     <% if (theme.busuanzi){%>
-   	 <div class="busuanzi">	
+   	 <div class="foot-busuanzi">	
 
      <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
    
@@ -19,16 +19,15 @@
     	
 	<div class="foot-link">
 	
-	 <%= __('Powered By-') %> 
-
 	 <a href="http://hexo.io/" target="_blank">Hexo</a>
 
-	 <%= __('Theme-') %>
+	 <%= __('Theme') %>
 
 	 <a href="https://github.com/Lemonreds/hexo-theme-Nayo" target="_blank">Nayo</a> 
 
-	 </div>
+	 </div>	
 
+	 <div class="foot-copyright">
 	  &copy; 
 	 <% if (year!='2017'){ %>
 	 	2017-
@@ -36,4 +35,6 @@
 
 	 <%= year %>
 	 <%= theme.profile.author || 'Synch' %>	 
+
+	 </div>
 </footer>
