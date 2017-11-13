@@ -6,14 +6,13 @@
     font-size .9em
 
 .tag-wrap	
-	display inline-block
-	padding .3em
-	margin .2em .3em	
+	@extend $tags  
+	display inline-block	
+	margin .2em 
 .tag-name
-	@extend $close 	
-	font-size 1.1rem	
+	font-size 1rem	
 	&:hover
-		color $main-clr		
+		color $main-clr	
 
 .tag-wrap-line	
 	border 1px solid $gray

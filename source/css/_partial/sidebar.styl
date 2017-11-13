@@ -55,11 +55,14 @@
 	text-align center
 	cursor pointer
 	&:hover
+		border 1px solid $main-clr
 		color $thr-clr
 	
 .search-word
 	font-size 16px
 	color gray
+	&:hover		
+		color $thr-clr
 
 
 
@@ -95,7 +98,8 @@
 	font-size .8rem
 	border-radius 10px		
 .link-item a	
+	position relative
+	@extend $close
 	padding .3em 0	
 	&:hover
 		color $main-clr 
-		border-bottom 1px solid $main-clr 

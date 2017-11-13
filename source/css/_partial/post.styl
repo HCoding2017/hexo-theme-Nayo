@@ -65,7 +65,7 @@
 .nav-link   
     font-size 1em
     &:hover
-      color $main-clr
+      color $thr-clr
    
 
 // post/reward
@@ -117,7 +117,8 @@
     margin .2em 0
     width 100%
 .category-link,.tag-link    
+    @extend $close
+    position relative
     padding .2em 0
     &:hover 
-     color $main-clr
-     border-bottom 1px solid $sub-clr
+     color $sub-clr  

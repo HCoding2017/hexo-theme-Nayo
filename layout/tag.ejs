@@ -19,8 +19,9 @@
 
         <% site.tags.sort('date',-1).each( function (tag){%>
 
-            <span class="iconfont icon-tag-inner"></span>
-            <span class="tag-wrap slideDownMin">               
+            
+            <span class="tag-wrap slideDownMin">    
+            <span class="iconfont icon-tag-inner"></span>           
                <a class="tag-name" href="<%- url_for(tag.path) %>"><%- tag.name %></a>%>
              </span>
 
