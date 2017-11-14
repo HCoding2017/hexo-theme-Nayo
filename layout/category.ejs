@@ -18,11 +18,15 @@
   <% title = __('Page.Categories')%>
   <span class="page-title"><%= title %></span>	
 
-    <% site.categories.forEach( function ( category ){%>
+    <% site.categories.sort('length',-1).forEach( function ( category ){%>
     <div class="category-item slideDownMin">
     
       <span class="iconfont icon-category"></span>
-      <a class="category-name" href="<%- url_for(category.path)%>"> <%- category.name %> </a>
+
+      <a class="category-name" href="<%- url_for(category.path)%>"> <%- category.name %>
+      <span class="meta-count"><%- category.length %></span>  
+      </a>
+
 
       <ul class="category-posts">
           <% category.posts.each(function (post){ %>      

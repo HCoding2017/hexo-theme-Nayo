@@ -2,43 +2,45 @@
 	display none
 	margin auto 0
 	height 100%	  
-	width 90%
+	width  240px
+	overflow auto
 .toc-contents
 	display block
 	color $black
 	padding .2em
+	margin 1em 0
 	font-size 1rem	
 	cursor pointer
 .toc-list
     list-style-type none	  
 .toc-item 
 	display block	
-	font-size .95rem
+	font-size .95rem 
+	max-width 240px
 	font-weight $font-normal
 	color $black
-	margin .3em 0
+	margin 6px 0
 	padding 0
 	letter-spacing  1px
 	
 .toc-item 
 	&:hover
 		cursor pointer
-		color $thr-clr 
-		margin-left .3em
+		color $thr-clr 		
 		 
 .toc-subitem 	
 	display block
+	max-width 240px
 	font-size .85rem	
-	margin .2em 0	
+	margin 6px 0	
 	color gray
-	margin-left 0.6em
 	font-weight $font-normal
 
 .toc-subitem
 	&:hover
 		cursor pointer
 		color  $thr-clr 
-		margin-left  .4em
+		
 
 //script CSS
 .toc-fixed	

@@ -97,7 +97,7 @@ leancloud:
 #mob share
 mob_share:
   enable: true
-  app_key: #21d601593a1de
+  app_key: 21d601593a1de
 
 #post reward
 reward:
