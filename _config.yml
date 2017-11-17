@@ -101,12 +101,12 @@ mob_share:
 
 share_item:
 - qq
-- wexin
+- weixin
 - weibo
-#- douban
-#- facebook
+- douban
+- facebook
 #- instagram
-#- twitter
+- twitter
 
 
 #post reward
