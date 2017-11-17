@@ -15,18 +15,25 @@ or dowanload zip and rename Nayo into **yourblog/themes/**
 ### 2. Modify theme setting in yourblog/_config.yml to Nayo. 
 ```
 theme: Nayo
-
 ```
 
 # Changeslog 更新日志
 
+
 ### v1.0.0
+
+2017.11.16
+- 重做了导航栏
+- 分享方式扩展
+- 其他细节优化
+
 2017.11.14
 - 文章内容排版
+
 2017.11.11
 - 主题配色定制
-- Widget 站内搜索
-- Sidebar 位置
+- 站内搜索插件
+- Sidebar位置
 
 # Other 其他
 

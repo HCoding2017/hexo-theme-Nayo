@@ -199,8 +199,8 @@
     transform:translateX(0px)   
   }
     100%{
-    -webkit-transform:translateX(15px)
-    transform:translateX(15px) 
+    -webkit-transform:translateX(10px)
+    transform:translateX(10px) 
   }
 }
 @-webkit-keyframes itemLIn{
@@ -208,7 +208,7 @@
     -webkit-transform:translateX(0px)    
   }
     100%{
-    -webkit-transform:translateX(15px)
+    -webkit-transform:translateX(10px)
   }
 }   
 
@@ -223,8 +223,8 @@
 
 @keyframes itemRIn{
     0%{
-    -webkit-transform:translateX(15px)  
-    transform:translateX(15px)   
+    -webkit-transform:translateX(10px)  
+    transform:translateX(10px)   
   }
     100%{
     -webkit-transform:translateX(0px)
@@ -233,7 +233,7 @@
 }
 @-webkit-keyframes itemRIn{
     0%{
-    -webkit-transform:translateX(15px)    
+    -webkit-transform:translateX(10px)    
   }
     100%{
     -webkit-transform:translateX(0px)
@@ -244,5 +244,61 @@
   -webkit-animation-fill-mode: forwards
   -webkit-animation-name: itemRIn
   -webkit-animation-duration  .5s  
+  -webkit-animation-iteration-count 1 
+  -webkit-animation-delay 0s
+
+
+//
+@keyframes menuSlideIn{
+    0%{
+    -webkit-transform:translateX(-200px)  
+    transform:translateX(-200px)       
+  }
+    100%{
+    -webkit-transform:translateX(0)
+    transform:translateX(0)  
+  }
+}
+@-webkit-keyframes menuSlideIn{
+    0%{
+    -webkit-transform:translateX(-200px)    
+  }
+    100%{
+    -webkit-transform:translateX(0)
+  }
+}   
+
+.menuSlideIn
+  -webkit-animation-fill-mode: forwards
+  -webkit-animation-name: menuSlideIn
+  -webkit-animation-duration  .5s  
+  -webkit-animation-iteration-count 1 
+  -webkit-animation-delay 0s
+  
+
+
+@keyframes menuSlideOut{
+    0%{
+    -webkit-transform:translateX(0)  
+    transform:translateX(0)       
+  }
+    100%{
+    -webkit-transform:translateX(-200px)
+    transform:translateX(-200px)  
+  }
+}
+@-webkit-keyframes menuSlideOut{
+    0%{
+    -webkit-transform:translateX(0)    
+  }
+    100%{
+    -webkit-transform:translateX(-200px)
+  }
+}   
+
+.menuSlideOut
+  -webkit-animation-fill-mode: forwards
+  -webkit-animation-name: menuSlideOut
+  -webkit-animation-duration  .4s  
   -webkit-animation-iteration-count 1 
   -webkit-animation-delay 0s

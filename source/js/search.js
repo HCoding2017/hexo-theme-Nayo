@@ -1,28 +1,35 @@
 
 $(function (){
 
-    $('.search-widget').click(function (){
+    $('.search-widget,.mobile-menu-search').click(function(){
+
+          opContainer();
+    })
+    
+})
+
+function opContainer(){
 
         var $sc = $('.search-container');
         var $msk = $('.search-mask');
 
         if($sc.hasClass('hide')){
 
-          $sc.removeClass('hide').addClass('show');
-          $msk.removeClass('hide').addClass('show');
+          $sc
+          .removeClass('hide').addClass('show');
+          $msk
+          .removeClass('hide').addClass('show');
           $('.search-input').focus();
 
+
           searchFunc("/search.xml", 'search-input', 'search-result');
-
         }else {
-
-          $sc.removeClass('show').addClass('hide');
-          $msk.removeClass('show').addClass('hide');
+          $sc
+          .removeClass('show').addClass('hide');
+          $msk
+          .removeClass('show').addClass('hide');
         }
-    })
-    
-})
-
+}
 
 var searchFunc = function (path, search_id, content_id) {  
   $.ajax({
@@ -113,15 +120,15 @@ var searchFunc = function (path, search_id, content_id) {
           }
         });     
         if (str.indexOf('<div') === -1) {
-          return $resultContent.innerHTML = "<div class='search-empty'>"+getFoundNothingWord()+"</div>";
+          return $resultContent.innerHTML = "<div class='search-empty '>"+getFoundNothingWord()+"</div>";
         }
         $resultContent.innerHTML =  str;
       });
     }
   });
 
-  $('.search-cancel').click(function (){
-      $('.search-widget').click();
+  $('.search-cancel ').click(function (){
+      opContainer();
       $('#search-input').val('');
       $('#search-result').html('');
   })

@@ -1,27 +1,27 @@
  .header
   clear both 
   width 100%
-  z-index 666 
+  z-index 30
   border-bottom 1px solid $line-clr
   
-.header-nav 
-  width 66%
-  margin  0 auto  
-  height 70px  
+.header-nav   
+  height 70px 
+  width 72% 
+  margin 0 auto
   display flex  
   align-items center
-  justify-content space-between 
+  justify-content space-between
     
 .header-logo   
     @extend $close
     position relative
     display inline-block
     line-height 70px
-    margin 0 4rem 
-    color $black
-    font-size 1.7rem    
+    color $black   
+    font-size 24px
+    margin 0 10%
+    text-align center  
     font-family $logo-font 
-    height 100%
     &:visited,&:active
       color $black
     &:hover 
@@ -29,6 +29,7 @@
      
 .header-menu
     height 100%
+    margin-right 1%
     display flex
     justify-content center
     align-items center
@@ -37,16 +38,44 @@
     margin 0 .8em
     height 100%
     display inline-block  
-    line-height 4.5em
-    font-size 1.1rem
-    opacity .8
-    letter-spacing .5px
+    line-height 70px
+    font-size 15px
+    letter-spacing .3px
     &:visited,&:active
-      color $black 
+      color #565a5f
     &:hover
       color $thr-clr 
-   
-//script
+      
+//mobile menu 
+.mobile-toggle
+  display none
+  position absolute
+  left 15px
+.mobile-menu
+  display none
+  position fixed
+  left 0
+  top 0    
+  width 200px
+  height 100%
+  background-color $bgr
+  z-index 999 
+  overflow-y auto
+  padding-top 26px
+  text-align center
+  border-right  1px solid $line-clr
+.mobile-menu-link
+  display block
+  padding 18px 14px
+  font-size 1.1rem
+  line-height 1
+  letter-spacing .4px
+  color #565a5f
+.slide-icon
+  margin 22px
+  width 40px    
+
+//////////js  
 .header-static
   position static
   opacity 1

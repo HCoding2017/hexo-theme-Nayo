@@ -2,24 +2,3 @@
 	<span  class="search-word">  <%= __('Search.Sidebar_words') %> </span>
 	<i class="iconfont icon-search"></i>
 </div>
-
-
-
-<div class="search-mask hide"></div>
-
-<div class="search-container hide fadeIn">
-
-  <input type="text" placeholder="<%= __('Search.input_words') %>" id="search-input" class="search-input">  
-  <span class="search-cancel iconfont icon-cancel"></span>
-
-  <div id="search-result" class="search-result"></div>
-
-</div>
-
-<script type="text/javascript">
-	function getFoundNothingWord() {
-		return  '<%= __('Search.Search_nonthing') %>';
-	}
-</script>
-
-<%- js('js/search.js') %> 

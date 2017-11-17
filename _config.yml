@@ -6,7 +6,7 @@ menu:
   tags: tags
   about: about
 
-# site color [blue black]
+# site color [blue black red]
 # hope you can submit your color code to me!
 color: black
 
@@ -98,6 +98,16 @@ leancloud:
 mob_share:
   enable: true
   app_key: 21d601593a1de
+
+share_item:
+- qq
+- wexin
+- weibo
+#- douban
+#- facebook
+#- instagram
+#- twitter
+
 
 #post reward
 reward:

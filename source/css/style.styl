@@ -33,10 +33,15 @@ body
    font-size 1.2em
    font-family $page-title-font 
    font-weight $font-blod
-   margin-bottom 2.6em
+   margin-bottom 2.3em
    opacity .8
    line-height 10px  
    letter-spacing .5px
+   
+.show
+  display block
+.hide
+  display none
   
 
 a
@@ -193,7 +198,6 @@ if toc is false
 @import "_animation"
 
 @media mq-mobile 
-      @import "_partial/mobile"    
-
+      @import "_partial/mobile"   
 @media mq-tablet
       @import "_partial/tablet"   

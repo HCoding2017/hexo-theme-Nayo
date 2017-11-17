@@ -5,8 +5,6 @@ $block
   background $block-bgr  
 .block
   @extend $block
-
-
 $tags
   margin 3px 2px
   padding 0 12px
@@ -19,9 +17,7 @@ $tags
     opacity 1
     background rgba(255,255,255,.2)
     color $main-clr
-    border 1px solid $main-clr
-
-    
+    border 1px solid $main-clr    
 $radius
   border-radius 12px	
 $img_radius 
@@ -44,6 +40,7 @@ $spread
         left 0%
         width 100%
 $close
+   position relative
    @media mq-normal  
       &::after
         content " " 
